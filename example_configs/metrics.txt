@@ -1,50 +1,50 @@
 # HELP process_cpu_seconds_total Total user and system CPU time spent in seconds.
 # TYPE process_cpu_seconds_total counter
-process_cpu_seconds_total 19.64
+process_cpu_seconds_total 19.09
 # HELP process_start_time_seconds Start time of the process since unix epoch in seconds.
 # TYPE process_start_time_seconds gauge
-process_start_time_seconds 1.585183738088E9
+process_start_time_seconds 1.585413317113E9
 # HELP process_open_fds Number of open file descriptors.
 # TYPE process_open_fds gauge
-process_open_fds 206.0
+process_open_fds 199.0
 # HELP process_max_fds Maximum number of open file descriptors.
 # TYPE process_max_fds gauge
 process_max_fds 1048576.0
 # HELP process_virtual_memory_bytes Virtual memory size in bytes.
 # TYPE process_virtual_memory_bytes gauge
-process_virtual_memory_bytes 5.910622208E9
+process_virtual_memory_bytes 5.904314368E9
 # HELP process_resident_memory_bytes Resident memory size in bytes.
 # TYPE process_resident_memory_bytes gauge
-process_resident_memory_bytes 4.05184512E8
+process_resident_memory_bytes 3.8182912E8
 # HELP jvm_buffer_pool_used_bytes Used bytes of a given JVM buffer pool.
 # TYPE jvm_buffer_pool_used_bytes gauge
-jvm_buffer_pool_used_bytes{pool="direct",} 60929.0
+jvm_buffer_pool_used_bytes{pool="direct",} 44516.0
 jvm_buffer_pool_used_bytes{pool="mapped",} 0.0
 # HELP jvm_buffer_pool_capacity_bytes Bytes capacity of a given JVM buffer pool.
 # TYPE jvm_buffer_pool_capacity_bytes gauge
-jvm_buffer_pool_capacity_bytes{pool="direct",} 60929.0
+jvm_buffer_pool_capacity_bytes{pool="direct",} 44516.0
 jvm_buffer_pool_capacity_bytes{pool="mapped",} 0.0
 # HELP jvm_buffer_pool_used_buffers Used buffers of a given JVM buffer pool.
 # TYPE jvm_buffer_pool_used_buffers gauge
-jvm_buffer_pool_used_buffers{pool="direct",} 26.0
+jvm_buffer_pool_used_buffers{pool="direct",} 22.0
 jvm_buffer_pool_used_buffers{pool="mapped",} 0.0
 # HELP jmx_exporter_build_info A metric with a constant '1' value labeled with the version of the JMX exporter.
 # TYPE jmx_exporter_build_info gauge
 jmx_exporter_build_info{version="0.12.0",name="jmx_prometheus_javaagent",} 1.0
 # HELP jvm_gc_collection_seconds Time spent in a given JVM garbage collector in seconds.
 # TYPE jvm_gc_collection_seconds summary
-jvm_gc_collection_seconds_count{gc="G1 Young Generation",} 24.0
-jvm_gc_collection_seconds_sum{gc="G1 Young Generation",} 0.241
+jvm_gc_collection_seconds_count{gc="G1 Young Generation",} 21.0
+jvm_gc_collection_seconds_sum{gc="G1 Young Generation",} 0.199
 jvm_gc_collection_seconds_count{gc="G1 Old Generation",} 0.0
 jvm_gc_collection_seconds_sum{gc="G1 Old Generation",} 0.0
 # HELP jvm_memory_bytes_used Used bytes of a given JVM memory area.
 # TYPE jvm_memory_bytes_used gauge
-jvm_memory_bytes_used{area="heap",} 1.0273332E8
-jvm_memory_bytes_used{area="nonheap",} 6.148836E7
+jvm_memory_bytes_used{area="heap",} 1.0157928E8
+jvm_memory_bytes_used{area="nonheap",} 5.5937736E7
 # HELP jvm_memory_bytes_committed Committed (bytes) of a given JVM memory area.
 # TYPE jvm_memory_bytes_committed gauge
 jvm_memory_bytes_committed{area="heap",} 2.68435456E8
-jvm_memory_bytes_committed{area="nonheap",} 6.3606784E7
+jvm_memory_bytes_committed{area="nonheap",} 5.7970688E7
 # HELP jvm_memory_bytes_max Max (bytes) of a given JVM memory area.
 # TYPE jvm_memory_bytes_max gauge
 jvm_memory_bytes_max{area="heap",} 2.147483648E9
@@ -55,20 +55,20 @@ jvm_memory_bytes_init{area="heap",} 2.68435456E8
 jvm_memory_bytes_init{area="nonheap",} 2555904.0
 # HELP jvm_memory_pool_bytes_used Used bytes of a given JVM memory pool.
 # TYPE jvm_memory_pool_bytes_used gauge
-jvm_memory_pool_bytes_used{pool="Code Cache",} 1.2482496E7
-jvm_memory_pool_bytes_used{pool="Metaspace",} 4.3656616E7
-jvm_memory_pool_bytes_used{pool="Compressed Class Space",} 5349248.0
-jvm_memory_pool_bytes_used{pool="G1 Eden Space",} 6.9206016E7
-jvm_memory_pool_bytes_used{pool="G1 Survivor Space",} 5242880.0
-jvm_memory_pool_bytes_used{pool="G1 Old Gen",} 2.8284424E7
+jvm_memory_pool_bytes_used{pool="Code Cache",} 9470336.0
+jvm_memory_pool_bytes_used{pool="Metaspace",} 4.1360728E7
+jvm_memory_pool_bytes_used{pool="Compressed Class Space",} 5106672.0
+jvm_memory_pool_bytes_used{pool="G1 Eden Space",} 6.6060288E7
+jvm_memory_pool_bytes_used{pool="G1 Survivor Space",} 2.097152E7
+jvm_memory_pool_bytes_used{pool="G1 Old Gen",} 1.4547472E7
 # HELP jvm_memory_pool_bytes_committed Committed bytes of a given JVM memory pool.
 # TYPE jvm_memory_pool_bytes_committed gauge
-jvm_memory_pool_bytes_committed{pool="Code Cache",} 1.2582912E7
-jvm_memory_pool_bytes_committed{pool="Metaspace",} 4.530176E7
-jvm_memory_pool_bytes_committed{pool="Compressed Class Space",} 5722112.0
-jvm_memory_pool_bytes_committed{pool="G1 Eden Space",} 9.961472E7
-jvm_memory_pool_bytes_committed{pool="G1 Survivor Space",} 5242880.0
-jvm_memory_pool_bytes_committed{pool="G1 Old Gen",} 1.63577856E8
+jvm_memory_pool_bytes_committed{pool="Code Cache",} 9568256.0
+jvm_memory_pool_bytes_committed{pool="Metaspace",} 4.2942464E7
+jvm_memory_pool_bytes_committed{pool="Compressed Class Space",} 5459968.0
+jvm_memory_pool_bytes_committed{pool="G1 Eden Space",} 1.47849216E8
+jvm_memory_pool_bytes_committed{pool="G1 Survivor Space",} 2.097152E7
+jvm_memory_pool_bytes_committed{pool="G1 Old Gen",} 9.961472E7
 # HELP jvm_memory_pool_bytes_max Max bytes of a given JVM memory pool.
 # TYPE jvm_memory_pool_bytes_max gauge
 jvm_memory_pool_bytes_max{pool="Code Cache",} 2.5165824E8
@@ -90,190 +90,93 @@ jvm_memory_pool_bytes_init{pool="G1 Old Gen",} 2.54803968E8
 jmx_config_reload_success_total 0.0
 # HELP kafka_producer_iotime_total Kafka producer JMX metric type producer
 # TYPE kafka_producer_iotime_total gauge
-kafka_producer_iotime_total{clientId="producer-1",} 6352074.0
-kafka_producer_iotime_total{clientId="producer-2",} 5753751.0
-kafka_producer_iotime_total{clientId="producer-3",} 4960270.0
-kafka_producer_iotime_total{clientId="connector-producer-CsvSpoolDir-0",} 1.67627724E8
-kafka_producer_iotime_total{clientId="connector-producer-CsvSpoolDir-1",} 2913951.0
+kafka_producer_iotime_total{clientId="producer-1",} 1.3569399E7
+kafka_producer_iotime_total{clientId="producer-2",} 4357986.0
+kafka_producer_iotime_total{clientId="producer-3",} 3619415.0
+kafka_producer_iotime_total{clientId="connector-producer-CsvSpoolDir-0",} 1809796.0
 # HELP kafka_connect_coordinator_join_total Kafka connect JMX metric type connect-coordinator
 # TYPE kafka_connect_coordinator_join_total gauge
-kafka_connect_coordinator_join_total{clientId="connect-1",} 3.0
-# HELP kafka_connect_coordinator_failed_rebalance_rate_per_hour Kafka connect JMX metric type connect-coordinator
-# TYPE kafka_connect_coordinator_failed_rebalance_rate_per_hour gauge
-kafka_connect_coordinator_failed_rebalance_rate_per_hour{clientId="connect-1",} 74.8502994011976
-# HELP kafka_producer_record_send_rate Kafka producer JMX metric type producer
-# TYPE kafka_producer_record_send_rate gauge
-kafka_producer_record_send_rate{clientId="producer-1",} 0.032008194097689006
-kafka_producer_record_send_rate{clientId="producer-2",} 0.07012622720897616
-kafka_producer_record_send_rate{clientId="producer-3",} 0.1060108131029365
-kafka_producer_record_send_rate{clientId="connector-producer-CsvSpoolDir-0",} 24.39738460037084
-kafka_producer_record_send_rate{clientId="connector-producer-CsvSpoolDir-1",} 0.0
-# HELP kafka_producer_network_io_rate Kafka producer JMX metric type producer
-# TYPE kafka_producer_network_io_rate gauge
-kafka_producer_network_io_rate{clientId="producer-1",} 0.20740433475059628
-kafka_producer_network_io_rate{clientId="producer-2",} 0.2920317062995411
-kafka_producer_network_io_rate{clientId="producer-3",} 0.3764745252237932
-kafka_producer_network_io_rate{clientId="connector-producer-CsvSpoolDir-0",} 6.410874385423696
-kafka_producer_network_io_rate{clientId="connector-producer-CsvSpoolDir-1",} 0.09599692809830086
+kafka_connect_coordinator_join_total{clientId="connect-1",} 1.0
 # HELP kafka_consumer_last_poll_seconds_ago Kafka consumer JMX metric type consumer
 # TYPE kafka_consumer_last_poll_seconds_ago gauge
-kafka_consumer_last_poll_seconds_ago{clientId="consumer-connect-cluster-2",} 11.0
-kafka_consumer_last_poll_seconds_ago{clientId="consumer-connect-cluster-1",} 1.0
-kafka_consumer_last_poll_seconds_ago{clientId="consumer-connect-cluster-3",} 11.0
-# HELP kafka_connect_coordinator_rebalance_rate_per_hour Kafka connect JMX metric type connect-coordinator
-# TYPE kafka_connect_coordinator_rebalance_rate_per_hour gauge
-kafka_connect_coordinator_rebalance_rate_per_hour{clientId="connect-1",} 224.72845311914767
-# HELP kafka_connect_network_io_rate Kafka connect JMX metric type connect
-# TYPE kafka_connect_network_io_rate gauge
-kafka_connect_network_io_rate{clientId="connect-1",} 0.6287462799178438
-# HELP kafka_producer_failed_reauthentication_rate Kafka producer JMX metric type producer
-# TYPE kafka_producer_failed_reauthentication_rate gauge
-kafka_producer_failed_reauthentication_rate{clientId="producer-1",} 0.0
-kafka_producer_failed_reauthentication_rate{clientId="producer-2",} 0.0
-kafka_producer_failed_reauthentication_rate{clientId="producer-3",} 0.0
-kafka_producer_failed_reauthentication_rate{clientId="connector-producer-CsvSpoolDir-0",} 0.0
-kafka_producer_failed_reauthentication_rate{clientId="connector-producer-CsvSpoolDir-1",} 0.0
-# HELP kafka_producer_topic_record_error_rate Kafka producer JMX metric type producer-topic
-# TYPE kafka_producer_topic_record_error_rate gauge
-kafka_producer_topic_record_error_rate{clientId="producer-3",topic="connect-configs",} 0.0
-kafka_producer_topic_record_error_rate{clientId="producer-1",topic="connect-offsets",} 0.0
-kafka_producer_topic_record_error_rate{clientId="producer-2",topic="connect-status",} 0.0
-kafka_producer_topic_record_error_rate{clientId="connector-producer-CsvSpoolDir-0",topic="spooldir-testing-topic",} 0.0
-# HELP kafka_consumer_coordinator_rebalance_latency_max Kafka consumer JMX metric type consumer-coordinator
-# TYPE kafka_consumer_coordinator_rebalance_latency_max gauge
-kafka_consumer_coordinator_rebalance_latency_max{clientId="consumer-connect-cluster-1",} NaN
-kafka_consumer_coordinator_rebalance_latency_max{clientId="consumer-connect-cluster-3",} NaN
-kafka_consumer_coordinator_rebalance_latency_max{clientId="consumer-connect-cluster-2",} NaN
+kafka_consumer_last_poll_seconds_ago{clientId="consumer-connect-cluster-2",} 7.0
+kafka_consumer_last_poll_seconds_ago{clientId="consumer-connect-cluster-1",} 8.0
+kafka_consumer_last_poll_seconds_ago{clientId="consumer-connect-cluster-3",} 6.0
+# HELP kafka_connect_worker_connector_paused_task_count Kafka Connect JMX metric CsvSpoolDir
+# TYPE kafka_connect_worker_connector_paused_task_count gauge
+kafka_connect_worker_connector_paused_task_count{connector="CsvSpoolDir",} 0.0
 # HELP kafka_connect_version_info Kafka connect JMX metric info version and commit-id
 # TYPE kafka_connect_version_info gauge
 kafka_connect_version_info{version="2.4.1",clientId="connect-1",} 1.0
-# HELP kafka_connect_connect_worker_connector_destroyed_task_count Kafka Connect JMX metric connect-worker
-# TYPE kafka_connect_connect_worker_connector_destroyed_task_count gauge
-kafka_connect_connect_worker_connector_destroyed_task_count{connector="CsvSpoolDir",task="connector-destroyed-task-count",} 0.0
 # HELP kafka_connect_coordinator_assigned_connectors Kafka connect JMX metric type connect-coordinator
 # TYPE kafka_connect_coordinator_assigned_connectors gauge
 kafka_connect_coordinator_assigned_connectors{clientId="connect-1",} 1.0
 # HELP kafka_connect_node_request_size_avg Kafka connect JMX metric type connect-node
 # TYPE kafka_connect_node_request_size_avg untyped
-kafka_connect_node_request_size_avg{clientId="connect-1",nodeId="node-2147483647",} 214.33333333333334
+kafka_connect_node_request_size_avg{clientId="connect-1",nodeId="node-2147483647",} 159.16666666666666
 kafka_connect_node_request_size_avg{clientId="connect-1",nodeId="node--1",} 40.0
 # HELP kafka_producer_node_request_total Kafka producer JMX metric type producer-node
 # TYPE kafka_producer_node_request_total untyped
-kafka_producer_node_request_total{clientId="producer-3",nodeId="node-0",} 7.0
-kafka_producer_node_request_total{clientId="producer-1",nodeId="node-0",} 3.0
-kafka_producer_node_request_total{clientId="connector-producer-CsvSpoolDir-0",nodeId="node-0",} 131.0
+kafka_producer_node_request_total{clientId="producer-3",nodeId="node-0",} 3.0
 kafka_producer_node_request_total{clientId="producer-2",nodeId="node--1",} 2.0
 kafka_producer_node_request_total{clientId="producer-1",nodeId="node--1",} 2.0
-kafka_producer_node_request_total{clientId="producer-2",nodeId="node-0",} 5.0
+kafka_producer_node_request_total{clientId="producer-2",nodeId="node-0",} 4.0
 kafka_producer_node_request_total{clientId="connector-producer-CsvSpoolDir-0",nodeId="node--1",} 2.0
 kafka_producer_node_request_total{clientId="producer-3",nodeId="node--1",} 2.0
-kafka_producer_node_request_total{clientId="connector-producer-CsvSpoolDir-1",nodeId="node--1",} 2.0
 # HELP kafka_producer_records_per_request_avg Kafka producer JMX metric type producer
 # TYPE kafka_producer_records_per_request_avg gauge
-kafka_producer_records_per_request_avg{clientId="producer-1",} 1.0
+kafka_producer_records_per_request_avg{clientId="producer-1",} NaN
 kafka_producer_records_per_request_avg{clientId="producer-2",} 1.0
 kafka_producer_records_per_request_avg{clientId="producer-3",} 1.0
-kafka_producer_records_per_request_avg{clientId="connector-producer-CsvSpoolDir-0",} 7.751937984496124
-kafka_producer_records_per_request_avg{clientId="connector-producer-CsvSpoolDir-1",} NaN
-# HELP kafka_producer_node_incoming_byte_rate Kafka producer JMX metric type producer-node
-# TYPE kafka_producer_node_incoming_byte_rate untyped
-kafka_producer_node_incoming_byte_rate{clientId="producer-3",nodeId="node-0",} 17.870423492913453
-kafka_producer_node_incoming_byte_rate{clientId="producer-1",nodeId="node-0",} 37.51199232491206
-kafka_producer_node_incoming_byte_rate{clientId="connector-producer-CsvSpoolDir-0",nodeId="node-0",} 265.20216491563195
-kafka_producer_node_incoming_byte_rate{clientId="producer-2",nodeId="node--1",} 8.86062754091525
-kafka_producer_node_incoming_byte_rate{clientId="producer-1",nodeId="node--1",} 8.773378473225714
-kafka_producer_node_incoming_byte_rate{clientId="producer-2",nodeId="node-0",} 18.435637594787007
-kafka_producer_node_incoming_byte_rate{clientId="connector-producer-CsvSpoolDir-0",nodeId="node--1",} 10.171114036137372
-kafka_producer_node_incoming_byte_rate{clientId="producer-3",nodeId="node--1",} 8.810298720951927
-kafka_producer_node_incoming_byte_rate{clientId="connector-producer-CsvSpoolDir-1",nodeId="node--1",} 10.1667344448963
-# HELP kafka_producer_buffer_total_bytes Kafka producer JMX metric type producer
-# TYPE kafka_producer_buffer_total_bytes gauge
-kafka_producer_buffer_total_bytes{clientId="producer-1",} 3.3554432E7
-kafka_producer_buffer_total_bytes{clientId="producer-2",} 3.3554432E7
-kafka_producer_buffer_total_bytes{clientId="producer-3",} 3.3554432E7
-kafka_producer_buffer_total_bytes{clientId="connector-producer-CsvSpoolDir-0",} 3.3554432E7
-kafka_producer_buffer_total_bytes{clientId="connector-producer-CsvSpoolDir-1",} 3.3554432E7
+kafka_producer_records_per_request_avg{clientId="connector-producer-CsvSpoolDir-0",} NaN
 # HELP kafka_connect_coordinator_heartbeat_total Kafka connect JMX metric type connect-coordinator
 # TYPE kafka_connect_coordinator_heartbeat_total gauge
-kafka_connect_coordinator_heartbeat_total{clientId="connect-1",} 4.0
-# HELP kafka_producer_node_request_latency_max Kafka producer JMX metric type producer-node
-# TYPE kafka_producer_node_request_latency_max untyped
-kafka_producer_node_request_latency_max{clientId="producer-3",nodeId="node-0",} 7.0
-kafka_producer_node_request_latency_max{clientId="producer-1",nodeId="node-0",} 8.0
-kafka_producer_node_request_latency_max{clientId="connector-producer-CsvSpoolDir-0",nodeId="node-0",} 19.0
-kafka_producer_node_request_latency_max{clientId="producer-2",nodeId="node--1",} NaN
-kafka_producer_node_request_latency_max{clientId="producer-1",nodeId="node--1",} NaN
-kafka_producer_node_request_latency_max{clientId="producer-2",nodeId="node-0",} 9.0
-kafka_producer_node_request_latency_max{clientId="connector-producer-CsvSpoolDir-0",nodeId="node--1",} NaN
-kafka_producer_node_request_latency_max{clientId="producer-3",nodeId="node--1",} NaN
-kafka_producer_node_request_latency_max{clientId="connector-producer-CsvSpoolDir-1",nodeId="node--1",} NaN
+kafka_connect_coordinator_heartbeat_total{clientId="connect-1",} 2.0
 # HELP kafka_consumer_time_between_poll_avg Kafka consumer JMX metric type consumer
 # TYPE kafka_consumer_time_between_poll_avg gauge
-kafka_consumer_time_between_poll_avg{clientId="consumer-connect-cluster-2",} 1322.0
-kafka_consumer_time_between_poll_avg{clientId="consumer-connect-cluster-1",} 5584.0
-kafka_consumer_time_between_poll_avg{clientId="consumer-connect-cluster-3",} 635.2
-# HELP kafka_connect_source_task_source_record_active_count_avg Kafka Connect JMX metric type source-task
-# TYPE kafka_connect_source_task_source_record_active_count_avg gauge
-kafka_connect_source_task_source_record_active_count_avg{connector="CsvSpoolDir",task="1",} NaN
-kafka_connect_source_task_source_record_active_count_avg{connector="CsvSpoolDir",task="0",} 500.0
+kafka_consumer_time_between_poll_avg{clientId="consumer-connect-cluster-2",} 223.75
+kafka_consumer_time_between_poll_avg{clientId="consumer-connect-cluster-1",} 47.5
+kafka_consumer_time_between_poll_avg{clientId="consumer-connect-cluster-3",} 236.4
 # HELP kafka_producer_produce_throttle_time_avg Kafka producer JMX metric type producer
 # TYPE kafka_producer_produce_throttle_time_avg gauge
 kafka_producer_produce_throttle_time_avg{clientId="producer-1",} 0.0
 kafka_producer_produce_throttle_time_avg{clientId="producer-2",} 0.0
 kafka_producer_produce_throttle_time_avg{clientId="producer-3",} 0.0
 kafka_producer_produce_throttle_time_avg{clientId="connector-producer-CsvSpoolDir-0",} 0.0
-kafka_producer_produce_throttle_time_avg{clientId="connector-producer-CsvSpoolDir-1",} 0.0
-# HELP kafka_connect_node_outgoing_byte_rate Kafka connect JMX metric type connect-node
-# TYPE kafka_connect_node_outgoing_byte_rate untyped
-kafka_connect_node_outgoing_byte_rate{clientId="connect-1",nodeId="node-2147483647",} 53.96898671758609
-kafka_connect_node_outgoing_byte_rate{clientId="connect-1",nodeId="node--1",} 2.498282430828805
 # HELP kafka_producer_record_queue_time_avg Kafka producer JMX metric type producer
 # TYPE kafka_producer_record_queue_time_avg gauge
-kafka_producer_record_queue_time_avg{clientId="producer-1",} 1.0
-kafka_producer_record_queue_time_avg{clientId="producer-2",} 1.6666666666666667
-kafka_producer_record_queue_time_avg{clientId="producer-3",} 2.2
-kafka_producer_record_queue_time_avg{clientId="connector-producer-CsvSpoolDir-0",} 9.922480620155039
-kafka_producer_record_queue_time_avg{clientId="connector-producer-CsvSpoolDir-1",} NaN
+kafka_producer_record_queue_time_avg{clientId="producer-1",} NaN
+kafka_producer_record_queue_time_avg{clientId="producer-2",} 1.5
+kafka_producer_record_queue_time_avg{clientId="producer-3",} 1.0
+kafka_producer_record_queue_time_avg{clientId="connector-producer-CsvSpoolDir-0",} NaN
 # HELP kafka_producer_record_error_total Kafka producer JMX metric type producer
 # TYPE kafka_producer_record_error_total gauge
 kafka_producer_record_error_total{clientId="producer-1",} 0.0
 kafka_producer_record_error_total{clientId="producer-2",} 0.0
 kafka_producer_record_error_total{clientId="producer-3",} 0.0
 kafka_producer_record_error_total{clientId="connector-producer-CsvSpoolDir-0",} 0.0
-kafka_producer_record_error_total{clientId="connector-producer-CsvSpoolDir-1",} 0.0
 # HELP kafka_connect_task_error_total_record_errors Kafka Connect JMX metric type task-error
 # TYPE kafka_connect_task_error_total_record_errors gauge
 kafka_connect_task_error_total_record_errors{connector="CsvSpoolDir",task="0",} 0.0
-kafka_connect_task_error_total_record_errors{connector="CsvSpoolDir",task="1",} 0.0
 # HELP kafka_consumer_poll_idle_ratio_avg Kafka consumer JMX metric type consumer
 # TYPE kafka_consumer_poll_idle_ratio_avg gauge
-kafka_consumer_poll_idle_ratio_avg{clientId="consumer-connect-cluster-2",} NaN
-kafka_consumer_poll_idle_ratio_avg{clientId="consumer-connect-cluster-1",} 0.7871044776119402
-kafka_consumer_poll_idle_ratio_avg{clientId="consumer-connect-cluster-3",} 0.23629014586908387
+kafka_consumer_poll_idle_ratio_avg{clientId="consumer-connect-cluster-2",} 0.5090692001513718
+kafka_consumer_poll_idle_ratio_avg{clientId="consumer-connect-cluster-1",} 1.0
+kafka_consumer_poll_idle_ratio_avg{clientId="consumer-connect-cluster-3",} 0.31343843843843844
 # HELP kafka_connect_coordinator_last_rebalance_seconds_ago Kafka connect JMX metric type connect-coordinator
 # TYPE kafka_connect_coordinator_last_rebalance_seconds_ago gauge
-kafka_connect_coordinator_last_rebalance_seconds_ago{clientId="connect-1",} 11.0
+kafka_connect_coordinator_last_rebalance_seconds_ago{clientId="connect-1",} 7.0
 # HELP kafka_producer_successful_authentication_no_reauth_total Kafka producer JMX metric type producer
 # TYPE kafka_producer_successful_authentication_no_reauth_total gauge
 kafka_producer_successful_authentication_no_reauth_total{clientId="producer-1",} 0.0
 kafka_producer_successful_authentication_no_reauth_total{clientId="producer-2",} 0.0
 kafka_producer_successful_authentication_no_reauth_total{clientId="producer-3",} 0.0
 kafka_producer_successful_authentication_no_reauth_total{clientId="connector-producer-CsvSpoolDir-0",} 0.0
-kafka_producer_successful_authentication_no_reauth_total{clientId="connector-producer-CsvSpoolDir-1",} 0.0
-# HELP kafka_connect_node_incoming_byte_rate Kafka connect JMX metric type connect-node
-# TYPE kafka_connect_node_incoming_byte_rate untyped
-kafka_connect_node_incoming_byte_rate{clientId="connect-1",nodeId="node-2147483647",} 36.196911196911195
-kafka_connect_node_incoming_byte_rate{clientId="connect-1",nodeId="node--1",} 57.50213394957633
 # HELP kafka_consumer_connection_close_total Kafka consumer JMX metric type consumer
 # TYPE kafka_consumer_connection_close_total gauge
 kafka_consumer_connection_close_total{clientId="consumer-connect-cluster-2",} 0.0
 kafka_consumer_connection_close_total{clientId="consumer-connect-cluster-1",} 0.0
 kafka_consumer_connection_close_total{clientId="consumer-connect-cluster-3",} 0.0
-# HELP kafka_consumer_coordinator_heartbeat_rate Kafka consumer JMX metric type consumer-coordinator
-# TYPE kafka_consumer_coordinator_heartbeat_rate gauge
-kafka_consumer_coordinator_heartbeat_rate{clientId="consumer-connect-cluster-1",} 0.0
-kafka_consumer_coordinator_heartbeat_rate{clientId="consumer-connect-cluster-3",} 0.0
-kafka_consumer_coordinator_heartbeat_rate{clientId="consumer-connect-cluster-2",} 0.0
 # HELP kafka_consumer_version_info Kafka consumer JMX metric info version and commit-id
 # TYPE kafka_consumer_version_info gauge
 kafka_consumer_version_info{version="2.4.1",clientId="consumer-connect-cluster-1",} 1.0
@@ -285,129 +188,75 @@ kafka_producer_bufferpool_wait_time_total{clientId="producer-1",} 0.0
 kafka_producer_bufferpool_wait_time_total{clientId="producer-2",} 0.0
 kafka_producer_bufferpool_wait_time_total{clientId="producer-3",} 0.0
 kafka_producer_bufferpool_wait_time_total{clientId="connector-producer-CsvSpoolDir-0",} 0.0
-kafka_producer_bufferpool_wait_time_total{clientId="connector-producer-CsvSpoolDir-1",} 0.0
 # HELP kafka_producer_topic_compression_rate Kafka producer JMX metric type producer-topic
 # TYPE kafka_producer_topic_compression_rate gauge
 kafka_producer_topic_compression_rate{clientId="producer-3",topic="connect-configs",} 1.0
-kafka_producer_topic_compression_rate{clientId="producer-1",topic="connect-offsets",} 1.0
 kafka_producer_topic_compression_rate{clientId="producer-2",topic="connect-status",} 1.0
-kafka_producer_topic_compression_rate{clientId="connector-producer-CsvSpoolDir-0",topic="spooldir-testing-topic",} 1.0
 # HELP kafka_consumer_fetch_manager_records_consumed_total Kafka consumer JMX metric type consumer-fetch-manager
 # TYPE kafka_consumer_fetch_manager_records_consumed_total gauge
-kafka_consumer_fetch_manager_records_consumed_total{clientId="consumer-connect-cluster-2",topic="connect-status",} 3.0
+kafka_consumer_fetch_manager_records_consumed_total{clientId="consumer-connect-cluster-2",topic="connect-status",} 45.0
 kafka_consumer_fetch_manager_records_consumed_total{clientId="consumer-connect-cluster-1",} 1.0
-kafka_consumer_fetch_manager_records_consumed_total{clientId="consumer-connect-cluster-3",topic="connect-configs",} 6.0
+kafka_consumer_fetch_manager_records_consumed_total{clientId="consumer-connect-cluster-3",topic="connect-configs",} 19.0
 kafka_consumer_fetch_manager_records_consumed_total{clientId="consumer-connect-cluster-1",topic="connect-offsets",} 1.0
-kafka_consumer_fetch_manager_records_consumed_total{clientId="consumer-connect-cluster-3",} 6.0
-kafka_consumer_fetch_manager_records_consumed_total{clientId="consumer-connect-cluster-2",} 3.0
-# HELP kafka_producer_topic_byte_rate Kafka producer JMX metric type producer-topic
-# TYPE kafka_producer_topic_byte_rate gauge
-kafka_producer_topic_byte_rate{clientId="producer-3",topic="connect-configs",} 84.93348327003459
-kafka_producer_topic_byte_rate{clientId="producer-1",topic="connect-offsets",} 4.402756508422664
-kafka_producer_topic_byte_rate{clientId="producer-2",topic="connect-status",} 12.016487738990708
-kafka_producer_topic_byte_rate{clientId="connector-producer-CsvSpoolDir-0",topic="spooldir-testing-topic",} 30395.625854325324
+kafka_consumer_fetch_manager_records_consumed_total{clientId="consumer-connect-cluster-3",} 19.0
+kafka_consumer_fetch_manager_records_consumed_total{clientId="consumer-connect-cluster-2",} 45.0
 # HELP kafka_connect_worker_rebalance_time_since_last_rebalance_ms Kafka Connect JMX metric rebalance information
 # TYPE kafka_connect_worker_rebalance_time_since_last_rebalance_ms gauge
-kafka_connect_worker_rebalance_time_since_last_rebalance_ms 11515.0
-# HELP kafka_connect_connect_worker_connector_unassigned_task_count Kafka Connect JMX metric connect-worker
-# TYPE kafka_connect_connect_worker_connector_unassigned_task_count gauge
-kafka_connect_connect_worker_connector_unassigned_task_count{connector="CsvSpoolDir",task="connector-unassigned-task-count",} 0.0
-# HELP kafka_consumer_coordinator_partition_assigned_latency_max Kafka consumer JMX metric type consumer-coordinator
-# TYPE kafka_consumer_coordinator_partition_assigned_latency_max gauge
-kafka_consumer_coordinator_partition_assigned_latency_max{clientId="consumer-connect-cluster-1",} NaN
-kafka_consumer_coordinator_partition_assigned_latency_max{clientId="consumer-connect-cluster-3",} NaN
-kafka_consumer_coordinator_partition_assigned_latency_max{clientId="consumer-connect-cluster-2",} NaN
+kafka_connect_worker_rebalance_time_since_last_rebalance_ms 7101.0
+# HELP kafka_producer_buffer_total Kafka producer JMX metric type producer
+# TYPE kafka_producer_buffer_total gauge
+kafka_producer_buffer_total{clientId="producer-1",} 3.3554432E7
+kafka_producer_buffer_total{clientId="producer-2",} 3.3554432E7
+kafka_producer_buffer_total{clientId="producer-3",} 3.3554432E7
+kafka_producer_buffer_total{clientId="connector-producer-CsvSpoolDir-0",} 3.3554432E7
 # HELP kafka_producer_record_retry_total Kafka producer JMX metric type producer
 # TYPE kafka_producer_record_retry_total gauge
 kafka_producer_record_retry_total{clientId="producer-1",} 0.0
 kafka_producer_record_retry_total{clientId="producer-2",} 0.0
 kafka_producer_record_retry_total{clientId="producer-3",} 0.0
 kafka_producer_record_retry_total{clientId="connector-producer-CsvSpoolDir-0",} 0.0
-kafka_producer_record_retry_total{clientId="connector-producer-CsvSpoolDir-1",} 0.0
 # HELP kafka_connect_worker_connector_startup_attempts_total Kafka Connect JMX metric worker
 # TYPE kafka_connect_worker_connector_startup_attempts_total gauge
 kafka_connect_worker_connector_startup_attempts_total 1.0
-# HELP kafka_consumer_coordinator_partition_revoked_latency_max Kafka consumer JMX metric type consumer-coordinator
-# TYPE kafka_consumer_coordinator_partition_revoked_latency_max gauge
-kafka_consumer_coordinator_partition_revoked_latency_max{clientId="consumer-connect-cluster-1",} NaN
-kafka_consumer_coordinator_partition_revoked_latency_max{clientId="consumer-connect-cluster-3",} NaN
-kafka_consumer_coordinator_partition_revoked_latency_max{clientId="consumer-connect-cluster-2",} NaN
 # HELP kafka_connect_node_incoming_byte_total Kafka connect JMX metric type connect-node
 # TYPE kafka_connect_node_incoming_byte_total untyped
-kafka_connect_node_incoming_byte_total{clientId="connect-1",nodeId="node-2147483647",} 1725.0
+kafka_connect_node_incoming_byte_total{clientId="connect-1",nodeId="node-2147483647",} 805.0
 kafka_connect_node_incoming_byte_total{clientId="connect-1",nodeId="node--1",} 2762.0
-# HELP kafka_producer_batch_split_rate Kafka producer JMX metric type producer
-# TYPE kafka_producer_batch_split_rate gauge
-kafka_producer_batch_split_rate{clientId="producer-1",} 0.0
-kafka_producer_batch_split_rate{clientId="producer-2",} 0.0
-kafka_producer_batch_split_rate{clientId="producer-3",} 0.0
-kafka_producer_batch_split_rate{clientId="connector-producer-CsvSpoolDir-0",} 0.0
-kafka_producer_batch_split_rate{clientId="connector-producer-CsvSpoolDir-1",} 0.0
-# HELP kafka_producer_record_error_rate Kafka producer JMX metric type producer
-# TYPE kafka_producer_record_error_rate gauge
-kafka_producer_record_error_rate{clientId="producer-1",} 0.0
-kafka_producer_record_error_rate{clientId="producer-2",} 0.0
-kafka_producer_record_error_rate{clientId="producer-3",} 0.0
-kafka_producer_record_error_rate{clientId="connector-producer-CsvSpoolDir-0",} 0.0
-kafka_producer_record_error_rate{clientId="connector-producer-CsvSpoolDir-1",} 0.0
-# HELP kafka_producer_record_size_max Kafka producer JMX metric type producer
-# TYPE kafka_producer_record_size_max gauge
-kafka_producer_record_size_max{clientId="producer-1",} 154.0
-kafka_producer_record_size_max{clientId="producer-2",} 190.0
-kafka_producer_record_size_max{clientId="producer-3",} 1572.0
-kafka_producer_record_size_max{clientId="connector-producer-CsvSpoolDir-0",} 1331.0
-kafka_producer_record_size_max{clientId="connector-producer-CsvSpoolDir-1",} NaN
+# HELP kafka_connect_worker_connector_destroyed_task_count Kafka Connect JMX metric CsvSpoolDir
+# TYPE kafka_connect_worker_connector_destroyed_task_count gauge
+kafka_connect_worker_connector_destroyed_task_count{connector="CsvSpoolDir",} 0.0
 # HELP kafka_producer_connection_count Kafka producer JMX metric type producer
 # TYPE kafka_producer_connection_count gauge
-kafka_producer_connection_count{clientId="producer-1",} 2.0
+kafka_producer_connection_count{clientId="producer-1",} 1.0
 kafka_producer_connection_count{clientId="producer-2",} 2.0
 kafka_producer_connection_count{clientId="producer-3",} 2.0
-kafka_producer_connection_count{clientId="connector-producer-CsvSpoolDir-0",} 2.0
-kafka_producer_connection_count{clientId="connector-producer-CsvSpoolDir-1",} 1.0
+kafka_producer_connection_count{clientId="connector-producer-CsvSpoolDir-0",} 1.0
 # HELP kafka_consumer_io_waittime_total Kafka consumer JMX metric type consumer
 # TYPE kafka_consumer_io_waittime_total gauge
-kafka_consumer_io_waittime_total{clientId="consumer-connect-cluster-2",} 1.7569387942E10
-kafka_consumer_io_waittime_total{clientId="consumer-connect-cluster-1",} 1.8078911858E10
-kafka_consumer_io_waittime_total{clientId="consumer-connect-cluster-3",} 1.7710708094E10
+kafka_consumer_io_waittime_total{clientId="consumer-connect-cluster-2",} 7.803156938E9
+kafka_consumer_io_waittime_total{clientId="consumer-connect-cluster-1",} 7.990904931E9
+kafka_consumer_io_waittime_total{clientId="consumer-connect-cluster-3",} 7.65093086E9
 # HELP kafka_connect_commit_id_info Kafka connect JMX metric info version and commit-id
 # TYPE kafka_connect_commit_id_info gauge
 kafka_connect_commit_id_info{commit_id="c57222ae8cd7866b",clientId="connect-1",} 1.0
 # HELP kafka_connect_outgoing_byte_total Kafka connect JMX metric type connect
 # TYPE kafka_connect_outgoing_byte_total gauge
-kafka_connect_outgoing_byte_total{clientId="connect-1",} 2692.0
-# HELP kafka_consumer_coordinator_join_time_max Kafka consumer JMX metric type consumer-coordinator
-# TYPE kafka_consumer_coordinator_join_time_max gauge
-kafka_consumer_coordinator_join_time_max{clientId="consumer-connect-cluster-1",} NaN
-kafka_consumer_coordinator_join_time_max{clientId="consumer-connect-cluster-3",} NaN
-kafka_consumer_coordinator_join_time_max{clientId="consumer-connect-cluster-2",} NaN
+kafka_connect_outgoing_byte_total{clientId="connect-1",} 1075.0
 # HELP kafka_connect_io_wait_ratio Kafka connect JMX metric type connect
 # TYPE kafka_connect_io_wait_ratio gauge
-kafka_connect_io_wait_ratio{clientId="connect-1",} 0.3034201338879692
+kafka_connect_io_wait_ratio{clientId="connect-1",} 0.17280306999257372
 # HELP kafka_producer_io_wait_time_ns_avg Kafka producer JMX metric type producer
 # TYPE kafka_producer_io_wait_time_ns_avg gauge
-kafka_producer_io_wait_time_ns_avg{clientId="producer-1",} 1.209820637857143E9
-kafka_producer_io_wait_time_ns_avg{clientId="producer-2",} 3.165827492380952E8
-kafka_producer_io_wait_time_ns_avg{clientId="producer-3",} 2.0909379214285713E8
-kafka_producer_io_wait_time_ns_avg{clientId="connector-producer-CsvSpoolDir-0",} 2109819.975543478
-kafka_producer_io_wait_time_ns_avg{clientId="connector-producer-CsvSpoolDir-1",} 1032974.6
-# HELP kafka_producer_outgoing_byte_rate Kafka producer JMX metric type producer
-# TYPE kafka_producer_outgoing_byte_rate gauge
-kafka_producer_outgoing_byte_rate{clientId="producer-1",} 7.881364720522658
-kafka_producer_outgoing_byte_rate{clientId="producer-2",} 18.43971631205674
-kafka_producer_outgoing_byte_rate{clientId="producer-3",} 94.22320756295491
-kafka_producer_outgoing_byte_rate{clientId="connector-producer-CsvSpoolDir-0",} 30310.565892220187
-kafka_producer_outgoing_byte_rate{clientId="connector-producer-CsvSpoolDir-1",} 2.9759047710473268
+kafka_producer_io_wait_time_ns_avg{clientId="producer-1",} 282371.2
+kafka_producer_io_wait_time_ns_avg{clientId="producer-2",} 5.236519538888889E7
+kafka_producer_io_wait_time_ns_avg{clientId="producer-3",} 4.891573193333333E7
+kafka_producer_io_wait_time_ns_avg{clientId="connector-producer-CsvSpoolDir-0",} 156672.8
 # HELP kafka_connect_worker_connector_startup_success_percentage Kafka Connect JMX metric worker
 # TYPE kafka_connect_worker_connector_startup_success_percentage gauge
 kafka_connect_worker_connector_startup_success_percentage 1.0
 # HELP kafka_connect_io_wait_time_ns_avg Kafka connect JMX metric type connect
 # TYPE kafka_connect_io_wait_time_ns_avg gauge
-kafka_connect_io_wait_time_ns_avg{clientId="connect-1",} 3.7902893636125654E7
-# HELP kafka_consumer_coordinator_heartbeat_response_time_max Kafka consumer JMX metric type consumer-coordinator
-# TYPE kafka_consumer_coordinator_heartbeat_response_time_max gauge
-kafka_consumer_coordinator_heartbeat_response_time_max{clientId="consumer-connect-cluster-1",} NaN
-kafka_consumer_coordinator_heartbeat_response_time_max{clientId="consumer-connect-cluster-3",} NaN
-kafka_consumer_coordinator_heartbeat_response_time_max{clientId="consumer-connect-cluster-2",} NaN
+kafka_connect_io_wait_time_ns_avg{clientId="connect-1",} 3.878194613690476E7
 # HELP kafka_consumer_failed_reauthentication_total Kafka consumer JMX metric type consumer
 # TYPE kafka_consumer_failed_reauthentication_total gauge
 kafka_consumer_failed_reauthentication_total{clientId="consumer-connect-cluster-2",} 0.0
@@ -415,57 +264,31 @@ kafka_consumer_failed_reauthentication_total{clientId="consumer-connect-cluster-
 kafka_consumer_failed_reauthentication_total{clientId="consumer-connect-cluster-3",} 0.0
 # HELP kafka_connect_select_total Kafka connect JMX metric type connect
 # TYPE kafka_connect_select_total gauge
-kafka_connect_select_total{clientId="connect-1",} 382.0
+kafka_connect_select_total{clientId="connect-1",} 168.0
 # HELP kafka_consumer_iotime_total Kafka consumer JMX metric type consumer
 # TYPE kafka_consumer_iotime_total gauge
-kafka_consumer_iotime_total{clientId="consumer-connect-cluster-2",} 3.5981139E7
-kafka_consumer_iotime_total{clientId="consumer-connect-cluster-1",} 4.1330854E7
-kafka_consumer_iotime_total{clientId="consumer-connect-cluster-3",} 2.2713151E7
-# HELP kafka_consumer_fetch_manager_fetch_throttle_time_max Kafka consumer JMX metric type consumer-fetch-manager
-# TYPE kafka_consumer_fetch_manager_fetch_throttle_time_max gauge
-kafka_consumer_fetch_manager_fetch_throttle_time_max{clientId="consumer-connect-cluster-1",} 0.0
-kafka_consumer_fetch_manager_fetch_throttle_time_max{clientId="consumer-connect-cluster-3",} 0.0
-kafka_consumer_fetch_manager_fetch_throttle_time_max{clientId="consumer-connect-cluster-2",} 0.0
-# HELP kafka_connect_connect_worker_connector_running_task_count Kafka Connect JMX metric connect-worker
-# TYPE kafka_connect_connect_worker_connector_running_task_count gauge
-kafka_connect_connect_worker_connector_running_task_count{connector="CsvSpoolDir",task="connector-running-task-count",} 2.0
+kafka_consumer_iotime_total{clientId="consumer-connect-cluster-2",} 1.5966546E7
+kafka_consumer_iotime_total{clientId="consumer-connect-cluster-1",} 2.6796875E7
+kafka_consumer_iotime_total{clientId="consumer-connect-cluster-3",} 2.2674136E7
 # HELP kafka_consumer_coordinator_rebalance_total Kafka consumer JMX metric type consumer-coordinator
 # TYPE kafka_consumer_coordinator_rebalance_total gauge
 kafka_consumer_coordinator_rebalance_total{clientId="consumer-connect-cluster-1",} 0.0
 kafka_consumer_coordinator_rebalance_total{clientId="consumer-connect-cluster-3",} 0.0
 kafka_consumer_coordinator_rebalance_total{clientId="consumer-connect-cluster-2",} 0.0
-# HELP kafka_consumer_start_time Kafka consumer JMX metric start time ms
-# TYPE kafka_consumer_start_time gauge
-kafka_consumer_start_time{clientId="consumer-connect-cluster-1",} 1.585183743913E12
-kafka_consumer_start_time{clientId="consumer-connect-cluster-2",} 1.585183744179E12
-kafka_consumer_start_time{clientId="consumer-connect-cluster-3",} 1.58518374434E12
 # HELP kafka_consumer_io_time_ns_avg Kafka consumer JMX metric type consumer
 # TYPE kafka_consumer_io_time_ns_avg gauge
-kafka_consumer_io_time_ns_avg{clientId="consumer-connect-cluster-2",} 382778.07446808513
-kafka_consumer_io_time_ns_avg{clientId="consumer-connect-cluster-1",} 430529.7291666667
-kafka_consumer_io_time_ns_avg{clientId="consumer-connect-cluster-3",} 174716.54615384617
-# HELP kafka_consumer_fetch_manager_fetch_rate Kafka consumer JMX metric type consumer-fetch-manager
-# TYPE kafka_consumer_fetch_manager_fetch_rate gauge
-kafka_consumer_fetch_manager_fetch_rate{clientId="consumer-connect-cluster-1",} 0.7587413324340843
-kafka_consumer_fetch_manager_fetch_rate{clientId="consumer-connect-cluster-3",} 0.851912647786066
-kafka_consumer_fetch_manager_fetch_rate{clientId="consumer-connect-cluster-2",} 0.7936507936507936
-# HELP kafka_consumer_connection_close_rate Kafka consumer JMX metric type consumer
-# TYPE kafka_consumer_connection_close_rate gauge
-kafka_consumer_connection_close_rate{clientId="consumer-connect-cluster-2",} 0.0
-kafka_consumer_connection_close_rate{clientId="consumer-connect-cluster-1",} 0.0
-kafka_consumer_connection_close_rate{clientId="consumer-connect-cluster-3",} 0.0
+kafka_consumer_io_time_ns_avg{clientId="consumer-connect-cluster-2",} 266109.1
+kafka_consumer_io_time_ns_avg{clientId="consumer-connect-cluster-1",} 525428.9215686275
+kafka_consumer_io_time_ns_avg{clientId="consumer-connect-cluster-3",} 390933.3793103448
 # HELP kafka_connect_worker_rebalance_epoch Kafka Connect JMX metric rebalance information
 # TYPE kafka_connect_worker_rebalance_epoch gauge
-kafka_connect_worker_rebalance_epoch 3.0
-# HELP kafka_connect_connection_close_rate Kafka connect JMX metric type connect
-# TYPE kafka_connect_connection_close_rate gauge
-kafka_connect_connection_close_rate{clientId="connect-1",} 0.0
+kafka_connect_worker_rebalance_epoch 15.0
 # HELP kafka_connect_worker_task_startup_success_percentage Kafka Connect JMX metric worker
 # TYPE kafka_connect_worker_task_startup_success_percentage gauge
 kafka_connect_worker_task_startup_success_percentage 1.0
 # HELP kafka_connect_coordinator_sync_total Kafka connect JMX metric type connect-coordinator
 # TYPE kafka_connect_coordinator_sync_total gauge
-kafka_connect_coordinator_sync_total{clientId="connect-1",} 3.0
+kafka_connect_coordinator_sync_total{clientId="connect-1",} 1.0
 # HELP kafka_consumer_fetch_manager_records_lag_avg Kafka consumer JMX metric type consumer-fetch-manager
 # TYPE kafka_consumer_fetch_manager_records_lag_avg gauge
 kafka_consumer_fetch_manager_records_lag_avg{clientId="consumer-connect-cluster-2",partition="4",topic="connect-status",} 0.0
@@ -499,129 +322,84 @@ kafka_consumer_fetch_manager_records_lag_avg{clientId="consumer-connect-cluster-
 kafka_consumer_fetch_manager_records_lag_avg{clientId="consumer-connect-cluster-1",partition="13",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lag_avg{clientId="consumer-connect-cluster-1",partition="5",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lag_avg{clientId="consumer-connect-cluster-1",partition="20",topic="connect-offsets",} 0.0
-# HELP kafka_producer_response_rate Kafka producer JMX metric type producer
-# TYPE kafka_producer_response_rate gauge
-kafka_producer_response_rate{clientId="producer-1",} 0.10370646920954929
-kafka_producer_response_rate{clientId="producer-2",} 0.14602499113419698
-kafka_producer_response_rate{clientId="producer-3",} 0.1882372626118966
-kafka_producer_response_rate{clientId="connector-producer-CsvSpoolDir-0",} 3.2055144489166327
-kafka_producer_response_rate{clientId="connector-producer-CsvSpoolDir-1",} 0.047999616003071975
 # HELP kafka_consumer_fetch_manager_records_per_request_avg Kafka consumer JMX metric type consumer-fetch-manager
 # TYPE kafka_consumer_fetch_manager_records_per_request_avg gauge
-kafka_consumer_fetch_manager_records_per_request_avg{clientId="consumer-connect-cluster-2",topic="connect-status",} 0.75
-kafka_consumer_fetch_manager_records_per_request_avg{clientId="consumer-connect-cluster-1",} 0.5
-kafka_consumer_fetch_manager_records_per_request_avg{clientId="consumer-connect-cluster-3",topic="connect-configs",} 1.0
-kafka_consumer_fetch_manager_records_per_request_avg{clientId="consumer-connect-cluster-1",topic="connect-offsets",} 0.5
-kafka_consumer_fetch_manager_records_per_request_avg{clientId="consumer-connect-cluster-3",} 1.0
-kafka_consumer_fetch_manager_records_per_request_avg{clientId="consumer-connect-cluster-2",} 0.75
+kafka_consumer_fetch_manager_records_per_request_avg{clientId="consumer-connect-cluster-2",topic="connect-status",} 15.0
+kafka_consumer_fetch_manager_records_per_request_avg{clientId="consumer-connect-cluster-1",} 1.0
+kafka_consumer_fetch_manager_records_per_request_avg{clientId="consumer-connect-cluster-3",topic="connect-configs",} 9.5
+kafka_consumer_fetch_manager_records_per_request_avg{clientId="consumer-connect-cluster-1",topic="connect-offsets",} 1.0
+kafka_consumer_fetch_manager_records_per_request_avg{clientId="consumer-connect-cluster-3",} 9.5
+kafka_consumer_fetch_manager_records_per_request_avg{clientId="consumer-connect-cluster-2",} 15.0
 # HELP kafka_connect_connection_count Kafka connect JMX metric type connect
 # TYPE kafka_connect_connection_count gauge
 kafka_connect_connection_count{clientId="connect-1",} 2.0
 # HELP kafka_connect_failed_reauthentication_total Kafka connect JMX metric type connect
 # TYPE kafka_connect_failed_reauthentication_total gauge
 kafka_connect_failed_reauthentication_total{clientId="connect-1",} 0.0
-# HELP kafka_producer_node_outgoing_byte_rate Kafka producer JMX metric type producer-node
-# TYPE kafka_producer_node_outgoing_byte_rate untyped
-kafka_producer_node_outgoing_byte_rate{clientId="producer-3",nodeId="node-0",} 94.02690125581692
-kafka_producer_node_outgoing_byte_rate{clientId="producer-1",nodeId="node-0",} 9.593859929645028
-kafka_producer_node_outgoing_byte_rate{clientId="connector-producer-CsvSpoolDir-0",nodeId="node-0",} 30795.954351765682
-kafka_producer_node_outgoing_byte_rate{clientId="producer-2",nodeId="node--1",} 1.667778519012675
-kafka_producer_node_outgoing_byte_rate{clientId="producer-1",nodeId="node--1",} 1.651391297167864
-kafka_producer_node_outgoing_byte_rate{clientId="producer-2",nodeId="node-0",} 18.64391058343382
-kafka_producer_node_outgoing_byte_rate{clientId="connector-producer-CsvSpoolDir-0",nodeId="node--1",} 2.9675010769157133
-kafka_producer_node_outgoing_byte_rate{clientId="producer-3",nodeId="node--1",} 1.6584091710027158
-kafka_producer_node_outgoing_byte_rate{clientId="connector-producer-CsvSpoolDir-1",nodeId="node--1",} 2.9662233279112047
 # HELP kafka_connect_source_task_source_record_write_total Kafka Connect JMX metric type source-task
 # TYPE kafka_connect_source_task_source_record_write_total gauge
-kafka_connect_source_task_source_record_write_total{connector="CsvSpoolDir",task="1",} 0.0
-kafka_connect_source_task_source_record_write_total{connector="CsvSpoolDir",task="0",} 1000.0
+kafka_connect_source_task_source_record_write_total{connector="CsvSpoolDir",task="0",} 0.0
 # HELP kafka_producer_topic_record_error_total Kafka producer JMX metric type producer-topic
 # TYPE kafka_producer_topic_record_error_total gauge
 kafka_producer_topic_record_error_total{clientId="producer-3",topic="connect-configs",} 0.0
-kafka_producer_topic_record_error_total{clientId="producer-1",topic="connect-offsets",} 0.0
 kafka_producer_topic_record_error_total{clientId="producer-2",topic="connect-status",} 0.0
-kafka_producer_topic_record_error_total{clientId="connector-producer-CsvSpoolDir-0",topic="spooldir-testing-topic",} 0.0
-# HELP kafka_connect_failed_reauthentication_rate Kafka connect JMX metric type connect
-# TYPE kafka_connect_failed_reauthentication_rate gauge
-kafka_connect_failed_reauthentication_rate{clientId="connect-1",} 0.0
 # HELP kafka_producer_buffer_exhausted_total Kafka producer JMX metric type producer
 # TYPE kafka_producer_buffer_exhausted_total gauge
 kafka_producer_buffer_exhausted_total{clientId="producer-1",} 0.0
 kafka_producer_buffer_exhausted_total{clientId="producer-2",} 0.0
 kafka_producer_buffer_exhausted_total{clientId="producer-3",} 0.0
 kafka_producer_buffer_exhausted_total{clientId="connector-producer-CsvSpoolDir-0",} 0.0
-kafka_producer_buffer_exhausted_total{clientId="connector-producer-CsvSpoolDir-1",} 0.0
 # HELP kafka_producer_io_ratio Kafka producer JMX metric type producer
 # TYPE kafka_producer_io_ratio gauge
-kafka_producer_io_ratio{clientId="producer-1",} 1.3174203583872575E-4
-kafka_producer_io_ratio{clientId="producer-2",} 1.200173338061367E-4
-kafka_producer_io_ratio{clientId="producer-3",} 1.0374312425490975E-4
-kafka_producer_io_ratio{clientId="connector-producer-CsvSpoolDir-0",} 0.004039903694599089
-kafka_producer_io_ratio{clientId="connector-producer-CsvSpoolDir-1",} 6.992922966162706E-5
-# HELP kafka_connect_successful_authentication_rate Kafka connect JMX metric type connect
-# TYPE kafka_connect_successful_authentication_rate gauge
-kafka_connect_successful_authentication_rate{clientId="connect-1",} 0.0
+kafka_producer_io_ratio{clientId="producer-1",} 3.537290216626261E-4
+kafka_producer_io_ratio{clientId="producer-2",} 1.1491366944415146E-4
+kafka_producer_io_ratio{clientId="producer-3",} 9.591157219704799E-5
+kafka_producer_io_ratio{clientId="connector-producer-CsvSpoolDir-0",} 4.8666128858771646E-5
 # HELP kafka_producer_node_outgoing_byte_total Kafka producer JMX metric type producer-node
 # TYPE kafka_producer_node_outgoing_byte_total untyped
-kafka_producer_node_outgoing_byte_total{clientId="producer-3",nodeId="node-0",} 4425.0
-kafka_producer_node_outgoing_byte_total{clientId="producer-1",nodeId="node-0",} 300.0
-kafka_producer_node_outgoing_byte_total{clientId="connector-producer-CsvSpoolDir-0",nodeId="node-0",} 1257522.0
+kafka_producer_node_outgoing_byte_total{clientId="producer-3",nodeId="node-0",} 357.0
 kafka_producer_node_outgoing_byte_total{clientId="producer-2",nodeId="node--1",} 80.0
 kafka_producer_node_outgoing_byte_total{clientId="producer-1",nodeId="node--1",} 80.0
-kafka_producer_node_outgoing_byte_total{clientId="producer-2",nodeId="node-0",} 804.0
+kafka_producer_node_outgoing_byte_total{clientId="producer-2",nodeId="node-0",} 1929.0
 kafka_producer_node_outgoing_byte_total{clientId="connector-producer-CsvSpoolDir-0",nodeId="node--1",} 124.0
 kafka_producer_node_outgoing_byte_total{clientId="producer-3",nodeId="node--1",} 80.0
-kafka_producer_node_outgoing_byte_total{clientId="connector-producer-CsvSpoolDir-1",nodeId="node--1",} 124.0
+# HELP kafka_connect_start_time_seconds Kafka connect JMX metric start time seconds
+# TYPE kafka_connect_start_time_seconds gauge
+kafka_connect_start_time_seconds{clientId="connect-1",} 1.585413322625E9
 # HELP kafka_producer_io_time_ns_avg Kafka producer JMX metric type producer
 # TYPE kafka_producer_io_time_ns_avg gauge
-kafka_producer_io_time_ns_avg{clientId="producer-1",} 453719.5714285714
-kafka_producer_io_time_ns_avg{clientId="producer-2",} 273988.14285714284
-kafka_producer_io_time_ns_avg{clientId="producer-3",} 177152.5
-kafka_producer_io_time_ns_avg{clientId="connector-producer-CsvSpoolDir-0",} 455510.1195652174
-kafka_producer_io_time_ns_avg{clientId="connector-producer-CsvSpoolDir-1",} 582790.2
+kafka_producer_io_time_ns_avg{clientId="producer-1",} 2713879.8
+kafka_producer_io_time_ns_avg{clientId="producer-2",} 242110.33333333334
+kafka_producer_io_time_ns_avg{clientId="producer-3",} 241294.33333333334
+kafka_producer_io_time_ns_avg{clientId="connector-producer-CsvSpoolDir-0",} 361959.2
 # HELP kafka_connect_io_ratio Kafka connect JMX metric type connect
 # TYPE kafka_connect_io_ratio gauge
-kafka_connect_io_ratio{clientId="connect-1",} 3.298677355129414E-4
-# HELP kafka_connect_failed_authentication_rate Kafka connect JMX metric type connect
-# TYPE kafka_connect_failed_authentication_rate gauge
-kafka_connect_failed_authentication_rate{clientId="connect-1",} 0.0
+kafka_connect_io_ratio{clientId="connect-1",} 2.789352554241154E-4
 # HELP kafka_consumer_network_io_total Kafka consumer JMX metric type consumer
 # TYPE kafka_consumer_network_io_total gauge
-kafka_consumer_network_io_total{clientId="consumer-connect-cluster-2",} 91.0
-kafka_consumer_network_io_total{clientId="consumer-connect-cluster-1",} 91.0
-kafka_consumer_network_io_total{clientId="consumer-connect-cluster-3",} 115.0
-# HELP kafka_consumer_successful_reauthentication_rate Kafka consumer JMX metric type consumer
-# TYPE kafka_consumer_successful_reauthentication_rate gauge
-kafka_consumer_successful_reauthentication_rate{clientId="consumer-connect-cluster-2",} 0.0
-kafka_consumer_successful_reauthentication_rate{clientId="consumer-connect-cluster-1",} 0.0
-kafka_consumer_successful_reauthentication_rate{clientId="consumer-connect-cluster-3",} 0.0
+kafka_consumer_network_io_total{clientId="consumer-connect-cluster-2",} 55.0
+kafka_consumer_network_io_total{clientId="consumer-connect-cluster-1",} 49.0
+kafka_consumer_network_io_total{clientId="consumer-connect-cluster-3",} 53.0
 # HELP kafka_producer_commit_id_info Kafka producer JMX metric info version and commit-id
 # TYPE kafka_producer_commit_id_info gauge
-kafka_producer_commit_id_info{commit_id="c57222ae8cd7866b",clientId="connector-producer-CsvSpoolDir-1",} 1.0
 kafka_producer_commit_id_info{commit_id="c57222ae8cd7866b",clientId="connector-producer-CsvSpoolDir-0",} 1.0
 kafka_producer_commit_id_info{commit_id="c57222ae8cd7866b",clientId="producer-3",} 1.0
 kafka_producer_commit_id_info{commit_id="c57222ae8cd7866b",clientId="producer-1",} 1.0
 kafka_producer_commit_id_info{commit_id="c57222ae8cd7866b",clientId="producer-2",} 1.0
 # HELP kafka_producer_request_size_avg Kafka producer JMX metric type producer
 # TYPE kafka_producer_request_size_avg gauge
-kafka_producer_request_size_avg{clientId="producer-1",} 76.0
-kafka_producer_request_size_avg{clientId="producer-2",} 126.28571428571429
-kafka_producer_request_size_avg{clientId="producer-3",} 500.55555555555554
-kafka_producer_request_size_avg{clientId="connector-producer-CsvSpoolDir-0",} 9455.984962406015
-kafka_producer_request_size_avg{clientId="connector-producer-CsvSpoolDir-1",} 62.0
-# HELP kafka_consumer_coordinator_join_rate Kafka consumer JMX metric type consumer-coordinator
-# TYPE kafka_consumer_coordinator_join_rate gauge
-kafka_consumer_coordinator_join_rate{clientId="consumer-connect-cluster-1",} 0.0
-kafka_consumer_coordinator_join_rate{clientId="consumer-connect-cluster-3",} 0.0
-kafka_consumer_coordinator_join_rate{clientId="consumer-connect-cluster-2",} 0.0
+kafka_producer_request_size_avg{clientId="producer-1",} 40.0
+kafka_producer_request_size_avg{clientId="producer-2",} 334.8333333333333
+kafka_producer_request_size_avg{clientId="producer-3",} 87.4
+kafka_producer_request_size_avg{clientId="connector-producer-CsvSpoolDir-0",} 62.0
 # HELP kafka_connect_request_total Kafka connect JMX metric type connect
 # TYPE kafka_connect_request_total gauge
-kafka_connect_request_total{clientId="connect-1",} 15.0
+kafka_connect_request_total{clientId="connect-1",} 9.0
 # HELP kafka_consumer_fetch_manager_records_lead_avg Kafka consumer JMX metric type consumer-fetch-manager
 # TYPE kafka_consumer_fetch_manager_records_lead_avg gauge
 kafka_consumer_fetch_manager_records_lead_avg{clientId="consumer-connect-cluster-2",partition="4",topic="connect-status",} 0.0
 kafka_consumer_fetch_manager_records_lead_avg{clientId="consumer-connect-cluster-1",partition="10",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lead_avg{clientId="consumer-connect-cluster-2",partition="3",topic="connect-status",} 0.5
+kafka_consumer_fetch_manager_records_lead_avg{clientId="consumer-connect-cluster-2",partition="3",topic="connect-status",} 23.5
 kafka_consumer_fetch_manager_records_lead_avg{clientId="consumer-connect-cluster-1",partition="14",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lead_avg{clientId="consumer-connect-cluster-1",partition="8",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lead_avg{clientId="consumer-connect-cluster-2",partition="0",topic="connect-status",} 0.0
@@ -637,14 +415,14 @@ kafka_consumer_fetch_manager_records_lead_avg{clientId="consumer-connect-cluster
 kafka_consumer_fetch_manager_records_lead_avg{clientId="consumer-connect-cluster-1",partition="2",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lead_avg{clientId="consumer-connect-cluster-1",partition="1",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lead_avg{clientId="consumer-connect-cluster-1",partition="17",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lead_avg{clientId="consumer-connect-cluster-2",partition="1",topic="connect-status",} 0.5
-kafka_consumer_fetch_manager_records_lead_avg{clientId="consumer-connect-cluster-1",partition="0",topic="connect-offsets",} 0.5
+kafka_consumer_fetch_manager_records_lead_avg{clientId="consumer-connect-cluster-2",partition="1",topic="connect-status",} 20.5
+kafka_consumer_fetch_manager_records_lead_avg{clientId="consumer-connect-cluster-1",partition="0",topic="connect-offsets",} 1.0
 kafka_consumer_fetch_manager_records_lead_avg{clientId="consumer-connect-cluster-1",partition="18",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lead_avg{clientId="consumer-connect-cluster-1",partition="19",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lead_avg{clientId="consumer-connect-cluster-2",partition="2",topic="connect-status",} 0.5
+kafka_consumer_fetch_manager_records_lead_avg{clientId="consumer-connect-cluster-2",partition="2",topic="connect-status",} 0.0
 kafka_consumer_fetch_manager_records_lead_avg{clientId="consumer-connect-cluster-1",partition="15",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lead_avg{clientId="consumer-connect-cluster-1",partition="9",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lead_avg{clientId="consumer-connect-cluster-3",partition="0",topic="connect-configs",} 3.5
+kafka_consumer_fetch_manager_records_lead_avg{clientId="consumer-connect-cluster-3",partition="0",topic="connect-configs",} 18.5
 kafka_consumer_fetch_manager_records_lead_avg{clientId="consumer-connect-cluster-1",partition="11",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lead_avg{clientId="consumer-connect-cluster-1",partition="7",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lead_avg{clientId="consumer-connect-cluster-1",partition="13",topic="connect-offsets",} 0.0
@@ -652,33 +430,24 @@ kafka_consumer_fetch_manager_records_lead_avg{clientId="consumer-connect-cluster
 kafka_consumer_fetch_manager_records_lead_avg{clientId="consumer-connect-cluster-1",partition="20",topic="connect-offsets",} 0.0
 # HELP kafka_connect_worker_task_startup_attempts_total Kafka Connect JMX metric worker
 # TYPE kafka_connect_worker_task_startup_attempts_total gauge
-kafka_connect_worker_task_startup_attempts_total 2.0
+kafka_connect_worker_task_startup_attempts_total 1.0
 # HELP kafka_producer_response_total Kafka producer JMX metric type producer
 # TYPE kafka_producer_response_total gauge
-kafka_producer_response_total{clientId="producer-1",} 5.0
-kafka_producer_response_total{clientId="producer-2",} 7.0
-kafka_producer_response_total{clientId="producer-3",} 9.0
-kafka_producer_response_total{clientId="connector-producer-CsvSpoolDir-0",} 133.0
-kafka_producer_response_total{clientId="connector-producer-CsvSpoolDir-1",} 2.0
+kafka_producer_response_total{clientId="producer-1",} 2.0
+kafka_producer_response_total{clientId="producer-2",} 6.0
+kafka_producer_response_total{clientId="producer-3",} 5.0
+kafka_producer_response_total{clientId="connector-producer-CsvSpoolDir-0",} 2.0
 # HELP kafka_connect_source_task_source_record_active_count Kafka Connect JMX metric type source-task
 # TYPE kafka_connect_source_task_source_record_active_count gauge
-kafka_connect_source_task_source_record_active_count{connector="CsvSpoolDir",task="1",} 0.0
+kafka_connect_source_task_source_record_active_count{connector="CsvSpoolDir",task="0",} NaN
 kafka_connect_source_task_source_record_active_count{connector="CsvSpoolDir",task="0",} 0.0
-# HELP kafka_consumer_coordinator_commit_rate Kafka consumer JMX metric type consumer-coordinator
-# TYPE kafka_consumer_coordinator_commit_rate gauge
-kafka_consumer_coordinator_commit_rate{clientId="consumer-connect-cluster-1",} 0.0
-kafka_consumer_coordinator_commit_rate{clientId="consumer-connect-cluster-3",} 0.0
-kafka_consumer_coordinator_commit_rate{clientId="consumer-connect-cluster-2",} 0.0
-# HELP kafka_connect_reauthentication_latency_max Kafka connect JMX metric type connect
-# TYPE kafka_connect_reauthentication_latency_max gauge
-kafka_connect_reauthentication_latency_max{clientId="connect-1",} NaN
+kafka_connect_source_task_source_record_active_count{connector="CsvSpoolDir",task="0",} NaN
 # HELP kafka_producer_bufferpool_wait_ratio Kafka producer JMX metric type producer
 # TYPE kafka_producer_bufferpool_wait_ratio gauge
 kafka_producer_bufferpool_wait_ratio{clientId="producer-1",} 0.0
 kafka_producer_bufferpool_wait_ratio{clientId="producer-2",} 0.0
 kafka_producer_bufferpool_wait_ratio{clientId="producer-3",} 0.0
 kafka_producer_bufferpool_wait_ratio{clientId="connector-producer-CsvSpoolDir-0",} 0.0
-kafka_producer_bufferpool_wait_ratio{clientId="connector-producer-CsvSpoolDir-1",} 0.0
 # HELP kafka_consumer_coordinator_sync_total Kafka consumer JMX metric type consumer-coordinator
 # TYPE kafka_consumer_coordinator_sync_total gauge
 kafka_consumer_coordinator_sync_total{clientId="consumer-connect-cluster-1",} 0.0
@@ -690,82 +459,98 @@ kafka_producer_failed_authentication_total{clientId="producer-1",} 0.0
 kafka_producer_failed_authentication_total{clientId="producer-2",} 0.0
 kafka_producer_failed_authentication_total{clientId="producer-3",} 0.0
 kafka_producer_failed_authentication_total{clientId="connector-producer-CsvSpoolDir-0",} 0.0
-kafka_producer_failed_authentication_total{clientId="connector-producer-CsvSpoolDir-1",} 0.0
-# HELP kafka_consumer_response_rate Kafka consumer JMX metric type consumer
-# TYPE kafka_consumer_response_rate gauge
-kafka_consumer_response_rate{clientId="consumer-connect-cluster-2",} 0.934734743051805
-kafka_consumer_response_rate{clientId="consumer-connect-cluster-1",} 0.9284093253558903
-kafka_consumer_response_rate{clientId="consumer-connect-cluster-3",} 1.1830635118306352
 # HELP kafka_consumer_incoming_byte_total Kafka consumer JMX metric type consumer
 # TYPE kafka_consumer_incoming_byte_total gauge
-kafka_consumer_incoming_byte_total{clientId="consumer-connect-cluster-2",} 3475.0
-kafka_consumer_incoming_byte_total{clientId="consumer-connect-cluster-1",} 6420.0
-kafka_consumer_incoming_byte_total{clientId="consumer-connect-cluster-3",} 7196.0
+kafka_consumer_incoming_byte_total{clientId="consumer-connect-cluster-2",} 25349.0
+kafka_consumer_incoming_byte_total{clientId="consumer-connect-cluster-1",} 5230.0
+kafka_consumer_incoming_byte_total{clientId="consumer-connect-cluster-3",} 7114.0
 # HELP kafka_producer_requests_in_flight Kafka producer JMX metric type producer
 # TYPE kafka_producer_requests_in_flight gauge
 kafka_producer_requests_in_flight{clientId="producer-1",} 0.0
 kafka_producer_requests_in_flight{clientId="producer-2",} 0.0
 kafka_producer_requests_in_flight{clientId="producer-3",} 0.0
 kafka_producer_requests_in_flight{clientId="connector-producer-CsvSpoolDir-0",} 0.0
-kafka_producer_requests_in_flight{clientId="connector-producer-CsvSpoolDir-1",} 0.0
 # HELP kafka_consumer_fetch_manager_bytes_consumed_total Kafka consumer JMX metric type consumer-fetch-manager
 # TYPE kafka_consumer_fetch_manager_bytes_consumed_total gauge
-kafka_consumer_fetch_manager_bytes_consumed_total{clientId="consumer-connect-cluster-2",topic="connect-status",} 333.0
+kafka_consumer_fetch_manager_bytes_consumed_total{clientId="consumer-connect-cluster-2",topic="connect-status",} 19959.0
 kafka_consumer_fetch_manager_bytes_consumed_total{clientId="consumer-connect-cluster-1",} 77.0
-kafka_consumer_fetch_manager_bytes_consumed_total{clientId="consumer-connect-cluster-3",topic="connect-configs",} 3832.0
+kafka_consumer_fetch_manager_bytes_consumed_total{clientId="consumer-connect-cluster-3",topic="connect-configs",} 4239.0
 kafka_consumer_fetch_manager_bytes_consumed_total{clientId="consumer-connect-cluster-1",topic="connect-offsets",} 77.0
-kafka_consumer_fetch_manager_bytes_consumed_total{clientId="consumer-connect-cluster-3",} 3832.0
-kafka_consumer_fetch_manager_bytes_consumed_total{clientId="consumer-connect-cluster-2",} 333.0
-# HELP kafka_connect_connect_worker_connector_paused_task_count Kafka Connect JMX metric connect-worker
-# TYPE kafka_connect_connect_worker_connector_paused_task_count gauge
-kafka_connect_connect_worker_connector_paused_task_count{connector="CsvSpoolDir",task="connector-paused-task-count",} 0.0
+kafka_consumer_fetch_manager_bytes_consumed_total{clientId="consumer-connect-cluster-3",} 4239.0
+kafka_consumer_fetch_manager_bytes_consumed_total{clientId="consumer-connect-cluster-2",} 19959.0
+# HELP kafka_connect_worker_connector_total_task_count Kafka Connect JMX metric CsvSpoolDir
+# TYPE kafka_connect_worker_connector_total_task_count gauge
+kafka_connect_worker_connector_total_task_count{connector="CsvSpoolDir",} 1.0
 # HELP kafka_consumer_fetch_manager_records_lag Kafka consumer JMX metric type consumer-fetch-manager
 # TYPE kafka_consumer_fetch_manager_records_lag gauge
 kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-2",partition="4",topic="connect-status",} 0.0
+kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-2",partition="4",topic="connect-status",} 0.0
+kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="10",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="10",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-2",partition="3",topic="connect-status",} 0.0
+kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-2",partition="3",topic="connect-status",} 0.0
+kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="14",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="14",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="8",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="8",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-2",partition="0",topic="connect-status",} 0.0
 kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-2",partition="0",topic="connect-status",} 0.0
 kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="16",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="16",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="12",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="12",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="21",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="21",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="6",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="6",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="22",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="22",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="3",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="3",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="4",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="4",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="24",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="24",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="23",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="23",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="2",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="2",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="1",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="1",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="17",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="17",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-2",partition="1",topic="connect-status",} 0.0
+kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-2",partition="1",topic="connect-status",} 0.0
+kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="0",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="0",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="18",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="18",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="19",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="19",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-2",partition="2",topic="connect-status",} 0.0
+kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-2",partition="2",topic="connect-status",} 0.0
+kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="15",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="15",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="9",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="9",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-3",partition="0",topic="connect-configs",} 0.0
 kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-3",partition="0",topic="connect-configs",} 0.0
 kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="11",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="11",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="7",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="7",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="13",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="13",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="5",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="5",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="20",topic="connect-offsets",} 0.0
-# HELP kafka_producer_request_latency_max Kafka producer JMX metric type producer
-# TYPE kafka_producer_request_latency_max gauge
-kafka_producer_request_latency_max{clientId="producer-1",} 8.0
-kafka_producer_request_latency_max{clientId="producer-2",} 9.0
-kafka_producer_request_latency_max{clientId="producer-3",} 7.0
-kafka_producer_request_latency_max{clientId="connector-producer-CsvSpoolDir-0",} 19.0
-kafka_producer_request_latency_max{clientId="connector-producer-CsvSpoolDir-1",} NaN
+kafka_consumer_fetch_manager_records_lag{clientId="consumer-connect-cluster-1",partition="20",topic="connect-offsets",} 0.0
 # HELP kafka_producer_reauthentication_latency_avg Kafka producer JMX metric type producer
 # TYPE kafka_producer_reauthentication_latency_avg gauge
 kafka_producer_reauthentication_latency_avg{clientId="producer-1",} NaN
 kafka_producer_reauthentication_latency_avg{clientId="producer-2",} NaN
 kafka_producer_reauthentication_latency_avg{clientId="producer-3",} NaN
 kafka_producer_reauthentication_latency_avg{clientId="connector-producer-CsvSpoolDir-0",} NaN
-kafka_producer_reauthentication_latency_avg{clientId="connector-producer-CsvSpoolDir-1",} NaN
 # HELP kafka_consumer_node_request_latency_avg Kafka consumer JMX metric type consumer-node
 # TYPE kafka_consumer_node_request_latency_avg untyped
 kafka_consumer_node_request_latency_avg{clientId="consumer-connect-cluster-1",nodeId="node--1",} NaN
@@ -782,14 +567,6 @@ kafka_consumer_coordinator_commit_latency_avg{clientId="consumer-connect-cluster
 # HELP kafka_connect_failed_authentication_total Kafka connect JMX metric type connect
 # TYPE kafka_connect_failed_authentication_total gauge
 kafka_connect_failed_authentication_total{clientId="connect-1",} 0.0
-# HELP kafka_consumer_fetch_manager_fetch_size_max Kafka consumer JMX metric type consumer-fetch-manager
-# TYPE kafka_consumer_fetch_manager_fetch_size_max gauge
-kafka_consumer_fetch_manager_fetch_size_max{clientId="consumer-connect-cluster-2",topic="connect-status",} 113.0
-kafka_consumer_fetch_manager_fetch_size_max{clientId="consumer-connect-cluster-1",} 77.0
-kafka_consumer_fetch_manager_fetch_size_max{clientId="consumer-connect-cluster-3",topic="connect-configs",} 1495.0
-kafka_consumer_fetch_manager_fetch_size_max{clientId="consumer-connect-cluster-1",topic="connect-offsets",} 77.0
-kafka_consumer_fetch_manager_fetch_size_max{clientId="consumer-connect-cluster-3",} 1495.0
-kafka_consumer_fetch_manager_fetch_size_max{clientId="consumer-connect-cluster-2",} 113.0
 # HELP kafka_consumer_coordinator_partition_lost_latency_avg Kafka consumer JMX metric type consumer-coordinator
 # TYPE kafka_consumer_coordinator_partition_lost_latency_avg gauge
 kafka_consumer_coordinator_partition_lost_latency_avg{clientId="consumer-connect-cluster-1",} NaN
@@ -797,19 +574,15 @@ kafka_consumer_coordinator_partition_lost_latency_avg{clientId="consumer-connect
 kafka_consumer_coordinator_partition_lost_latency_avg{clientId="consumer-connect-cluster-2",} NaN
 # HELP kafka_consumer_request_size_avg Kafka consumer JMX metric type consumer
 # TYPE kafka_consumer_request_size_avg gauge
-kafka_consumer_request_size_avg{clientId="consumer-connect-cluster-2",} 85.19565217391305
-kafka_consumer_request_size_avg{clientId="consumer-connect-cluster-1",} 116.32608695652173
-kafka_consumer_request_size_avg{clientId="consumer-connect-cluster-3",} 82.06896551724138
-# HELP kafka_connect_coordinator_sync_time_max Kafka connect JMX metric type connect-coordinator
-# TYPE kafka_connect_coordinator_sync_time_max gauge
-kafka_connect_coordinator_sync_time_max{clientId="connect-1",} 4.0
+kafka_consumer_request_size_avg{clientId="consumer-connect-cluster-2",} 95.39285714285714
+kafka_consumer_request_size_avg{clientId="consumer-connect-cluster-1",} 135.24
+kafka_consumer_request_size_avg{clientId="consumer-connect-cluster-3",} 80.07407407407408
 # HELP kafka_producer_buffer_available_bytes Kafka producer JMX metric type producer
 # TYPE kafka_producer_buffer_available_bytes gauge
 kafka_producer_buffer_available_bytes{clientId="producer-1",} 3.3554432E7
 kafka_producer_buffer_available_bytes{clientId="producer-2",} 3.3554432E7
 kafka_producer_buffer_available_bytes{clientId="producer-3",} 3.3554432E7
 kafka_producer_buffer_available_bytes{clientId="connector-producer-CsvSpoolDir-0",} 3.3554432E7
-kafka_producer_buffer_available_bytes{clientId="connector-producer-CsvSpoolDir-1",} 3.3554432E7
 # HELP kafka_consumer_fetch_manager_fetch_throttle_time_avg Kafka consumer JMX metric type consumer-fetch-manager
 # TYPE kafka_consumer_fetch_manager_fetch_throttle_time_avg gauge
 kafka_consumer_fetch_manager_fetch_throttle_time_avg{clientId="consumer-connect-cluster-1",} 0.0
@@ -817,153 +590,62 @@ kafka_consumer_fetch_manager_fetch_throttle_time_avg{clientId="consumer-connect-
 kafka_consumer_fetch_manager_fetch_throttle_time_avg{clientId="consumer-connect-cluster-2",} 0.0
 # HELP kafka_producer_node_response_total Kafka producer JMX metric type producer-node
 # TYPE kafka_producer_node_response_total untyped
-kafka_producer_node_response_total{clientId="producer-3",nodeId="node-0",} 7.0
-kafka_producer_node_response_total{clientId="producer-1",nodeId="node-0",} 3.0
-kafka_producer_node_response_total{clientId="connector-producer-CsvSpoolDir-0",nodeId="node-0",} 131.0
+kafka_producer_node_response_total{clientId="producer-3",nodeId="node-0",} 3.0
 kafka_producer_node_response_total{clientId="producer-2",nodeId="node--1",} 2.0
 kafka_producer_node_response_total{clientId="producer-1",nodeId="node--1",} 2.0
-kafka_producer_node_response_total{clientId="producer-2",nodeId="node-0",} 5.0
+kafka_producer_node_response_total{clientId="producer-2",nodeId="node-0",} 4.0
 kafka_producer_node_response_total{clientId="connector-producer-CsvSpoolDir-0",nodeId="node--1",} 2.0
 kafka_producer_node_response_total{clientId="producer-3",nodeId="node--1",} 2.0
-kafka_producer_node_response_total{clientId="connector-producer-CsvSpoolDir-1",nodeId="node--1",} 2.0
 # HELP kafka_producer_connection_creation_total Kafka producer JMX metric type producer
 # TYPE kafka_producer_connection_creation_total gauge
-kafka_producer_connection_creation_total{clientId="producer-1",} 2.0
+kafka_producer_connection_creation_total{clientId="producer-1",} 1.0
 kafka_producer_connection_creation_total{clientId="producer-2",} 2.0
 kafka_producer_connection_creation_total{clientId="producer-3",} 2.0
-kafka_producer_connection_creation_total{clientId="connector-producer-CsvSpoolDir-0",} 2.0
-kafka_producer_connection_creation_total{clientId="connector-producer-CsvSpoolDir-1",} 1.0
+kafka_producer_connection_creation_total{clientId="connector-producer-CsvSpoolDir-0",} 1.0
 # HELP kafka_connect_node_outgoing_byte_total Kafka connect JMX metric type connect-node
 # TYPE kafka_connect_node_outgoing_byte_total untyped
-kafka_connect_node_outgoing_byte_total{clientId="connect-1",nodeId="node-2147483647",} 2572.0
+kafka_connect_node_outgoing_byte_total{clientId="connect-1",nodeId="node-2147483647",} 955.0
 kafka_connect_node_outgoing_byte_total{clientId="connect-1",nodeId="node--1",} 120.0
 # HELP kafka_consumer_node_request_size_avg Kafka consumer JMX metric type consumer-node
 # TYPE kafka_consumer_node_request_size_avg untyped
 kafka_consumer_node_request_size_avg{clientId="consumer-connect-cluster-1",nodeId="node--1",} 58.333333333333336
 kafka_consumer_node_request_size_avg{clientId="consumer-connect-cluster-2",nodeId="node--1",} 58.0
-kafka_consumer_node_request_size_avg{clientId="consumer-connect-cluster-2",nodeId="node-0",} 86.81818181818181
-kafka_consumer_node_request_size_avg{clientId="consumer-connect-cluster-3",nodeId="node-0",} 83.36363636363636
+kafka_consumer_node_request_size_avg{clientId="consumer-connect-cluster-2",nodeId="node-0",} 99.88
+kafka_consumer_node_request_size_avg{clientId="consumer-connect-cluster-3",nodeId="node-0",} 82.79166666666667
 kafka_consumer_node_request_size_avg{clientId="consumer-connect-cluster-3",nodeId="node--1",} 58.333333333333336
-kafka_consumer_node_request_size_avg{clientId="consumer-connect-cluster-1",nodeId="node-0",} 120.37209302325581
-# HELP kafka_producer_failed_authentication_rate Kafka producer JMX metric type producer
-# TYPE kafka_producer_failed_authentication_rate gauge
-kafka_producer_failed_authentication_rate{clientId="producer-1",} 0.0
-kafka_producer_failed_authentication_rate{clientId="producer-2",} 0.0
-kafka_producer_failed_authentication_rate{clientId="producer-3",} 0.0
-kafka_producer_failed_authentication_rate{clientId="connector-producer-CsvSpoolDir-0",} 0.0
-kafka_producer_failed_authentication_rate{clientId="connector-producer-CsvSpoolDir-1",} 0.0
+kafka_consumer_node_request_size_avg{clientId="consumer-connect-cluster-1",nodeId="node-0",} 145.72727272727272
 # HELP kafka_producer_io_wait_ratio Kafka producer JMX metric type producer
 # TYPE kafka_producer_io_wait_ratio gauge
-kafka_producer_io_wait_ratio{clientId="producer-1",} 0.3512690059728732
-kafka_producer_io_wait_ratio{clientId="producer-2",} 0.13866962296894228
-kafka_producer_io_wait_ratio{clientId="producer-3",} 0.12244585644371941
-kafka_producer_io_wait_ratio{clientId="connector-producer-CsvSpoolDir-0",} 0.018710117622960695
-kafka_producer_io_wait_ratio{clientId="connector-producer-CsvSpoolDir-1",} 1.239410875407948E-4
-# HELP kafka_producer_request_rate Kafka producer JMX metric type producer
-# TYPE kafka_producer_request_rate gauge
-kafka_producer_request_rate{clientId="producer-1",} 0.10370216737529814
-kafka_producer_request_rate{clientId="producer-2",} 0.14601585314977056
-kafka_producer_request_rate{clientId="producer-3",} 0.1882372626118966
-kafka_producer_request_rate{clientId="connector-producer-CsvSpoolDir-0",} 3.205437192711848
-kafka_producer_request_rate{clientId="connector-producer-CsvSpoolDir-1",} 0.04799846404915043
-# HELP kafka_consumer_fetch_manager_records_consumed_rate Kafka consumer JMX metric type consumer-fetch-manager
-# TYPE kafka_consumer_fetch_manager_records_consumed_rate gauge
-kafka_consumer_fetch_manager_records_consumed_rate{clientId="consumer-connect-cluster-2",topic="connect-status",} 0.06343165239454487
-kafka_consumer_fetch_manager_records_consumed_rate{clientId="consumer-connect-cluster-1",} 0.021081479919890376
-kafka_consumer_fetch_manager_records_consumed_rate{clientId="consumer-connect-cluster-3",topic="connect-configs",} 0.12595251590150514
-kafka_consumer_fetch_manager_records_consumed_rate{clientId="consumer-connect-cluster-1",topic="connect-offsets",} 0.021022536158762196
-kafka_consumer_fetch_manager_records_consumed_rate{clientId="consumer-connect-cluster-3",} 0.12472197393310745
-kafka_consumer_fetch_manager_records_consumed_rate{clientId="consumer-connect-cluster-2",} 0.06265925894983082
+kafka_producer_io_wait_ratio{clientId="producer-1",} 3.6793912227666E-5
+kafka_producer_io_wait_ratio{clientId="producer-2",} 0.02485361943309163
+kafka_producer_io_wait_ratio{clientId="producer-3",} 0.019442895198473687
+kafka_producer_io_wait_ratio{clientId="connector-producer-CsvSpoolDir-0",} 2.1064400763666675E-5
 # HELP kafka_connect_io_waittime_total Kafka connect JMX metric type connect
 # TYPE kafka_connect_io_waittime_total gauge
-kafka_connect_io_waittime_total{clientId="connect-1",} 1.4478905369E10
+kafka_connect_io_waittime_total{clientId="connect-1",} 6.515366951E9
 # HELP kafka_consumer_connection_count Kafka consumer JMX metric type consumer
 # TYPE kafka_consumer_connection_count gauge
 kafka_consumer_connection_count{clientId="consumer-connect-cluster-2",} 2.0
 kafka_consumer_connection_count{clientId="consumer-connect-cluster-1",} 2.0
 kafka_consumer_connection_count{clientId="consumer-connect-cluster-3",} 2.0
-# HELP kafka_connect_connect_worker_connector_total_task_count Kafka Connect JMX metric connect-worker
-# TYPE kafka_connect_connect_worker_connector_total_task_count gauge
-kafka_connect_connect_worker_connector_total_task_count{connector="CsvSpoolDir",task="connector-total-task-count",} 2.0
-# HELP kafka_connect_connect_worker_connector_failed_task_count Kafka Connect JMX metric connect-worker
-# TYPE kafka_connect_connect_worker_connector_failed_task_count gauge
-kafka_connect_connect_worker_connector_failed_task_count{connector="CsvSpoolDir",task="connector-failed-task-count",} 0.0
 # HELP kafka_connect_node_response_total Kafka connect JMX metric type connect-node
 # TYPE kafka_connect_node_response_total untyped
-kafka_connect_node_response_total{clientId="connect-1",nodeId="node-2147483647",} 12.0
+kafka_connect_node_response_total{clientId="connect-1",nodeId="node-2147483647",} 6.0
 kafka_connect_node_response_total{clientId="connect-1",nodeId="node--1",} 3.0
-# HELP kafka_connect_request_size_max Kafka connect JMX metric type connect
-# TYPE kafka_connect_request_size_max gauge
-kafka_connect_request_size_max{clientId="connect-1",} 487.0
-# HELP kafka_producer_connection_close_rate Kafka producer JMX metric type producer
-# TYPE kafka_producer_connection_close_rate gauge
-kafka_producer_connection_close_rate{clientId="producer-1",} 0.0
-kafka_producer_connection_close_rate{clientId="producer-2",} 0.0
-kafka_producer_connection_close_rate{clientId="producer-3",} 0.0
-kafka_producer_connection_close_rate{clientId="connector-producer-CsvSpoolDir-0",} 0.0
-kafka_producer_connection_close_rate{clientId="connector-producer-CsvSpoolDir-1",} 0.0
 # HELP kafka_connect_connector_status Kafka Connect JMX Connector status
 # TYPE kafka_connect_connector_status gauge
 kafka_connect_connector_status{connector="CsvSpoolDir",status="running",task="0",} 1.0
-kafka_connect_connector_status{connector="CsvSpoolDir",status="running",task="1",} 1.0
-# HELP kafka_consumer_fetch_manager_records_lag_max Kafka consumer JMX metric type consumer-fetch-manager
-# TYPE kafka_consumer_fetch_manager_records_lag_max gauge
-kafka_consumer_fetch_manager_records_lag_max{clientId="consumer-connect-cluster-2",partition="4",topic="connect-status",} 0.0
-kafka_consumer_fetch_manager_records_lag_max{clientId="consumer-connect-cluster-1",} 0.0
-kafka_consumer_fetch_manager_records_lag_max{clientId="consumer-connect-cluster-1",partition="10",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lag_max{clientId="consumer-connect-cluster-2",partition="3",topic="connect-status",} 0.0
-kafka_consumer_fetch_manager_records_lag_max{clientId="consumer-connect-cluster-1",partition="14",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lag_max{clientId="consumer-connect-cluster-1",partition="8",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lag_max{clientId="consumer-connect-cluster-2",partition="0",topic="connect-status",} 0.0
-kafka_consumer_fetch_manager_records_lag_max{clientId="consumer-connect-cluster-1",partition="16",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lag_max{clientId="consumer-connect-cluster-1",partition="12",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lag_max{clientId="consumer-connect-cluster-1",partition="21",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lag_max{clientId="consumer-connect-cluster-1",partition="6",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lag_max{clientId="consumer-connect-cluster-1",partition="22",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lag_max{clientId="consumer-connect-cluster-1",partition="3",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lag_max{clientId="consumer-connect-cluster-1",partition="4",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lag_max{clientId="consumer-connect-cluster-1",partition="24",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lag_max{clientId="consumer-connect-cluster-1",partition="23",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lag_max{clientId="consumer-connect-cluster-1",partition="2",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lag_max{clientId="consumer-connect-cluster-1",partition="1",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lag_max{clientId="consumer-connect-cluster-1",partition="17",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lag_max{clientId="consumer-connect-cluster-2",partition="1",topic="connect-status",} 0.0
-kafka_consumer_fetch_manager_records_lag_max{clientId="consumer-connect-cluster-1",partition="0",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lag_max{clientId="consumer-connect-cluster-1",partition="18",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lag_max{clientId="consumer-connect-cluster-1",partition="19",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lag_max{clientId="consumer-connect-cluster-2",partition="2",topic="connect-status",} 0.0
-kafka_consumer_fetch_manager_records_lag_max{clientId="consumer-connect-cluster-1",partition="15",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lag_max{clientId="consumer-connect-cluster-3",} 0.0
-kafka_consumer_fetch_manager_records_lag_max{clientId="consumer-connect-cluster-1",partition="9",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lag_max{clientId="consumer-connect-cluster-3",partition="0",topic="connect-configs",} 0.0
-kafka_consumer_fetch_manager_records_lag_max{clientId="consumer-connect-cluster-1",partition="11",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lag_max{clientId="consumer-connect-cluster-1",partition="7",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lag_max{clientId="consumer-connect-cluster-1",partition="13",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lag_max{clientId="consumer-connect-cluster-1",partition="5",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lag_max{clientId="consumer-connect-cluster-1",partition="20",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lag_max{clientId="consumer-connect-cluster-2",} 0.0
 # HELP kafka_producer_record_size_avg Kafka producer JMX metric type producer
 # TYPE kafka_producer_record_size_avg gauge
-kafka_producer_record_size_avg{clientId="producer-1",} 154.0
-kafka_producer_record_size_avg{clientId="producer-2",} 188.0
-kafka_producer_record_size_avg{clientId="producer-3",} 816.8
-kafka_producer_record_size_avg{clientId="connector-producer-CsvSpoolDir-0",} 1320.8527131782946
-kafka_producer_record_size_avg{clientId="connector-producer-CsvSpoolDir-1",} NaN
-# HELP kafka_producer_successful_reauthentication_rate Kafka producer JMX metric type producer
-# TYPE kafka_producer_successful_reauthentication_rate gauge
-kafka_producer_successful_reauthentication_rate{clientId="producer-1",} 0.0
-kafka_producer_successful_reauthentication_rate{clientId="producer-2",} 0.0
-kafka_producer_successful_reauthentication_rate{clientId="producer-3",} 0.0
-kafka_producer_successful_reauthentication_rate{clientId="connector-producer-CsvSpoolDir-0",} 0.0
-kafka_producer_successful_reauthentication_rate{clientId="connector-producer-CsvSpoolDir-1",} 0.0
-# HELP kafka_connect_response_rate Kafka connect JMX metric type connect
-# TYPE kafka_connect_response_rate gauge
-kafka_connect_response_rate{clientId="connect-1",} 0.3143731399589219
+kafka_producer_record_size_avg{clientId="producer-1",} NaN
+kafka_producer_record_size_avg{clientId="producer-2",} 868.5
+kafka_producer_record_size_avg{clientId="producer-3",} 211.0
+kafka_producer_record_size_avg{clientId="connector-producer-CsvSpoolDir-0",} NaN
 # HELP kafka_consumer_request_total Kafka consumer JMX metric type consumer
 # TYPE kafka_consumer_request_total gauge
-kafka_consumer_request_total{clientId="consumer-connect-cluster-2",} 46.0
-kafka_consumer_request_total{clientId="consumer-connect-cluster-1",} 46.0
-kafka_consumer_request_total{clientId="consumer-connect-cluster-3",} 58.0
+kafka_consumer_request_total{clientId="consumer-connect-cluster-2",} 28.0
+kafka_consumer_request_total{clientId="consumer-connect-cluster-1",} 25.0
+kafka_consumer_request_total{clientId="consumer-connect-cluster-3",} 27.0
 # HELP kafka_consumer_coordinator_last_rebalance_seconds_ago Kafka consumer JMX metric type consumer-coordinator
 # TYPE kafka_consumer_coordinator_last_rebalance_seconds_ago gauge
 kafka_consumer_coordinator_last_rebalance_seconds_ago{clientId="consumer-connect-cluster-1",} -1.0
@@ -974,33 +656,21 @@ kafka_consumer_coordinator_last_rebalance_seconds_ago{clientId="consumer-connect
 kafka_consumer_successful_authentication_total{clientId="consumer-connect-cluster-2",} 0.0
 kafka_consumer_successful_authentication_total{clientId="consumer-connect-cluster-1",} 0.0
 kafka_consumer_successful_authentication_total{clientId="consumer-connect-cluster-3",} 0.0
-# HELP kafka_consumer_coordinator_sync_rate Kafka consumer JMX metric type consumer-coordinator
-# TYPE kafka_consumer_coordinator_sync_rate gauge
-kafka_consumer_coordinator_sync_rate{clientId="consumer-connect-cluster-1",} 0.0
-kafka_consumer_coordinator_sync_rate{clientId="consumer-connect-cluster-3",} 0.0
-kafka_consumer_coordinator_sync_rate{clientId="consumer-connect-cluster-2",} 0.0
 # HELP kafka_connect_task_error_deadletterqueue_produce_requests Kafka Connect JMX metric type task-error
 # TYPE kafka_connect_task_error_deadletterqueue_produce_requests gauge
 kafka_connect_task_error_deadletterqueue_produce_requests{connector="CsvSpoolDir",task="0",} 0.0
-kafka_connect_task_error_deadletterqueue_produce_requests{connector="CsvSpoolDir",task="1",} 0.0
 # HELP kafka_connect_task_error_total_records_skipped Kafka Connect JMX metric type task-error
 # TYPE kafka_connect_task_error_total_records_skipped gauge
 kafka_connect_task_error_total_records_skipped{connector="CsvSpoolDir",task="0",} 0.0
-kafka_connect_task_error_total_records_skipped{connector="CsvSpoolDir",task="1",} 0.0
-# HELP kafka_connect_coordinator_heartbeat_rate Kafka connect JMX metric type connect-coordinator
-# TYPE kafka_connect_coordinator_heartbeat_rate gauge
-kafka_connect_coordinator_heartbeat_rate{clientId="connect-1",} 0.08878826219173824
 # HELP kafka_connect_task_error_total_retries Kafka Connect JMX metric type task-error
 # TYPE kafka_connect_task_error_total_retries gauge
 kafka_connect_task_error_total_retries{connector="CsvSpoolDir",task="0",} 0.0
-kafka_connect_task_error_total_retries{connector="CsvSpoolDir",task="1",} 0.0
 # HELP kafka_producer_select_total Kafka producer JMX metric type producer
 # TYPE kafka_producer_select_total gauge
-kafka_producer_select_total{clientId="producer-1",} 14.0
-kafka_producer_select_total{clientId="producer-2",} 21.0
-kafka_producer_select_total{clientId="producer-3",} 28.0
-kafka_producer_select_total{clientId="connector-producer-CsvSpoolDir-0",} 368.0
-kafka_producer_select_total{clientId="connector-producer-CsvSpoolDir-1",} 5.0
+kafka_producer_select_total{clientId="producer-1",} 5.0
+kafka_producer_select_total{clientId="producer-2",} 18.0
+kafka_producer_select_total{clientId="producer-3",} 15.0
+kafka_producer_select_total{clientId="connector-producer-CsvSpoolDir-0",} 5.0
 # HELP kafka_consumer_successful_reauthentication_total Kafka consumer JMX metric type consumer
 # TYPE kafka_consumer_successful_reauthentication_total gauge
 kafka_consumer_successful_reauthentication_total{clientId="consumer-connect-cluster-2",} 0.0
@@ -1010,15 +680,10 @@ kafka_consumer_successful_reauthentication_total{clientId="consumer-connect-clus
 # TYPE kafka_consumer_node_incoming_byte_total untyped
 kafka_consumer_node_incoming_byte_total{clientId="consumer-connect-cluster-1",nodeId="node--1",} 1173.0
 kafka_consumer_node_incoming_byte_total{clientId="consumer-connect-cluster-2",nodeId="node--1",} 652.0
-kafka_consumer_node_incoming_byte_total{clientId="consumer-connect-cluster-2",nodeId="node-0",} 2845.0
-kafka_consumer_node_incoming_byte_total{clientId="consumer-connect-cluster-3",nodeId="node-0",} 6647.0
+kafka_consumer_node_incoming_byte_total{clientId="consumer-connect-cluster-2",nodeId="node-0",} 24697.0
+kafka_consumer_node_incoming_byte_total{clientId="consumer-connect-cluster-3",nodeId="node-0",} 6565.0
 kafka_consumer_node_incoming_byte_total{clientId="consumer-connect-cluster-3",nodeId="node--1",} 549.0
-kafka_consumer_node_incoming_byte_total{clientId="consumer-connect-cluster-1",nodeId="node-0",} 5247.0
-# HELP kafka_consumer_outgoing_byte_rate Kafka consumer JMX metric type consumer
-# TYPE kafka_consumer_outgoing_byte_rate gauge
-kafka_consumer_outgoing_byte_rate{clientId="consumer-connect-cluster-2",} 81.40162844798937
-kafka_consumer_outgoing_byte_rate{clientId="consumer-connect-cluster-1",} 110.39818444398597
-kafka_consumer_outgoing_byte_rate{clientId="consumer-connect-cluster-3",} 98.79208002988668
+kafka_consumer_node_incoming_byte_total{clientId="consumer-connect-cluster-1",nodeId="node-0",} 4057.0
 # HELP kafka_consumer_connection_creation_total Kafka consumer JMX metric type consumer
 # TYPE kafka_consumer_connection_creation_total gauge
 kafka_consumer_connection_creation_total{clientId="consumer-connect-cluster-2",} 2.0
@@ -1030,47 +695,23 @@ kafka_producer_batch_split_total{clientId="producer-1",} 0.0
 kafka_producer_batch_split_total{clientId="producer-2",} 0.0
 kafka_producer_batch_split_total{clientId="producer-3",} 0.0
 kafka_producer_batch_split_total{clientId="connector-producer-CsvSpoolDir-0",} 0.0
-kafka_producer_batch_split_total{clientId="connector-producer-CsvSpoolDir-1",} 0.0
-# HELP kafka_producer_buffer_exhausted_rate Kafka producer JMX metric type producer
-# TYPE kafka_producer_buffer_exhausted_rate gauge
-kafka_producer_buffer_exhausted_rate{clientId="producer-1",} 0.0
-kafka_producer_buffer_exhausted_rate{clientId="producer-2",} 0.0
-kafka_producer_buffer_exhausted_rate{clientId="producer-3",} 0.0
-kafka_producer_buffer_exhausted_rate{clientId="connector-producer-CsvSpoolDir-0",} 0.0
-kafka_producer_buffer_exhausted_rate{clientId="connector-producer-CsvSpoolDir-1",} 0.0
 # HELP kafka_connect_worker_connector_count Kafka Connect JMX metric worker
 # TYPE kafka_connect_worker_connector_count gauge
 kafka_connect_worker_connector_count 1.0
-# HELP kafka_connect_connector_task_offset_commit_success_percentage Kafka Connect JMX metric type connector-task
-# TYPE kafka_connect_connector_task_offset_commit_success_percentage gauge
-kafka_connect_connector_task_offset_commit_success_percentage{connector="CsvSpoolDir",task="0",} 1.0
-kafka_connect_connector_task_offset_commit_success_percentage{connector="CsvSpoolDir",task="1",} 1.0
-# HELP kafka_producer_node_response_rate Kafka producer JMX metric type producer-node
-# TYPE kafka_producer_node_response_rate untyped
-kafka_producer_node_response_rate{clientId="producer-3",nodeId="node-0",} 0.14874312063067083
-kafka_producer_node_response_rate{clientId="producer-1",nodeId="node-0",} 0.09593859929645027
-kafka_producer_node_response_rate{clientId="connector-producer-CsvSpoolDir-0",nodeId="node-0",} 3.2081894546077927
-kafka_producer_node_response_rate{clientId="producer-2",nodeId="node--1",} 0.04169707078077765
-kafka_producer_node_response_rate{clientId="producer-1",nodeId="node--1",} 0.04128648693282688
-kafka_producer_node_response_rate{clientId="producer-2",nodeId="node-0",} 0.11594740625652204
-kafka_producer_node_response_rate{clientId="connector-producer-CsvSpoolDir-0",nodeId="node--1",} 0.047864066052411156
-kafka_producer_node_response_rate{clientId="producer-3",nodeId="node--1",} 0.04146022927506789
-kafka_producer_node_response_rate{clientId="connector-producer-CsvSpoolDir-1",nodeId="node--1",} 0.047843456211276704
 # HELP kafka_connect_iotime_total Kafka connect JMX metric type connect
 # TYPE kafka_connect_iotime_total gauge
-kafka_connect_iotime_total{clientId="connect-1",} 1.5739639E7
+kafka_connect_iotime_total{clientId="connect-1",} 1.0516417E7
 # HELP kafka_consumer_select_total Kafka consumer JMX metric type consumer
 # TYPE kafka_consumer_select_total gauge
-kafka_consumer_select_total{clientId="consumer-connect-cluster-2",} 94.0
-kafka_consumer_select_total{clientId="consumer-connect-cluster-1",} 96.0
-kafka_consumer_select_total{clientId="consumer-connect-cluster-3",} 130.0
+kafka_consumer_select_total{clientId="consumer-connect-cluster-2",} 60.0
+kafka_consumer_select_total{clientId="consumer-connect-cluster-1",} 51.0
+kafka_consumer_select_total{clientId="consumer-connect-cluster-3",} 58.0
 # HELP kafka_producer_io_waittime_total Kafka producer JMX metric type producer
 # TYPE kafka_producer_io_waittime_total gauge
-kafka_producer_io_waittime_total{clientId="producer-1",} 1.693748893E10
-kafka_producer_io_waittime_total{clientId="producer-2",} 6.648237734E9
-kafka_producer_io_waittime_total{clientId="producer-3",} 5.85462618E9
-kafka_producer_io_waittime_total{clientId="connector-producer-CsvSpoolDir-0",} 7.76413751E8
-kafka_producer_io_waittime_total{clientId="connector-producer-CsvSpoolDir-1",} 5164873.0
+kafka_producer_io_waittime_total{clientId="producer-1",} 1411856.0
+kafka_producer_io_waittime_total{clientId="producer-2",} 9.42573517E8
+kafka_producer_io_waittime_total{clientId="producer-3",} 7.33735979E8
+kafka_producer_io_waittime_total{clientId="connector-producer-CsvSpoolDir-0",} 783364.0
 # HELP kafka_connect_connection_creation_total Kafka connect JMX metric type connect
 # TYPE kafka_connect_connection_creation_total gauge
 kafka_connect_connection_creation_total{clientId="connect-1",} 2.0
@@ -1081,359 +722,183 @@ kafka_consumer_reauthentication_latency_avg{clientId="consumer-connect-cluster-1
 kafka_consumer_reauthentication_latency_avg{clientId="consumer-connect-cluster-3",} NaN
 # HELP kafka_connect_network_io_total Kafka connect JMX metric type connect
 # TYPE kafka_connect_network_io_total gauge
-kafka_connect_network_io_total{clientId="connect-1",} 30.0
-# HELP kafka_consumer_coordinator_sync_time_max Kafka consumer JMX metric type consumer-coordinator
-# TYPE kafka_consumer_coordinator_sync_time_max gauge
-kafka_consumer_coordinator_sync_time_max{clientId="consumer-connect-cluster-1",} NaN
-kafka_consumer_coordinator_sync_time_max{clientId="consumer-connect-cluster-3",} NaN
-kafka_consumer_coordinator_sync_time_max{clientId="consumer-connect-cluster-2",} NaN
-# HELP kafka_connect_source_task_source_record_poll_rate Kafka Connect JMX metric type source-task
-# TYPE kafka_connect_source_task_source_record_poll_rate gauge
-kafka_connect_source_task_source_record_poll_rate{connector="CsvSpoolDir",task="1",} 0.0
-kafka_connect_source_task_source_record_poll_rate{connector="CsvSpoolDir",task="0",} 24.216006780481898
+kafka_connect_network_io_total{clientId="connect-1",} 18.0
 # HELP kafka_connect_connector_task_offset_commit_avg_time_ms Kafka Connect JMX metric type connector-task
 # TYPE kafka_connect_connector_task_offset_commit_avg_time_ms gauge
-kafka_connect_connector_task_offset_commit_avg_time_ms{connector="CsvSpoolDir",task="0",} 20.0
-kafka_connect_connector_task_offset_commit_avg_time_ms{connector="CsvSpoolDir",task="1",} 0.0
+kafka_connect_connector_task_offset_commit_avg_time_ms{connector="CsvSpoolDir",task="0",} NaN
 # HELP kafka_producer_node_request_size_avg Kafka producer JMX metric type producer-node
 # TYPE kafka_producer_node_request_size_avg untyped
-kafka_producer_node_request_size_avg{clientId="producer-3",nodeId="node-0",} 632.1428571428571
-kafka_producer_node_request_size_avg{clientId="producer-1",nodeId="node-0",} 100.0
-kafka_producer_node_request_size_avg{clientId="connector-producer-CsvSpoolDir-0",nodeId="node-0",} 9599.404580152672
+kafka_producer_node_request_size_avg{clientId="producer-3",nodeId="node-0",} 119.0
 kafka_producer_node_request_size_avg{clientId="producer-2",nodeId="node--1",} 40.0
 kafka_producer_node_request_size_avg{clientId="producer-1",nodeId="node--1",} 40.0
-kafka_producer_node_request_size_avg{clientId="producer-2",nodeId="node-0",} 160.8
+kafka_producer_node_request_size_avg{clientId="producer-2",nodeId="node-0",} 482.25
 kafka_producer_node_request_size_avg{clientId="connector-producer-CsvSpoolDir-0",nodeId="node--1",} 62.0
 kafka_producer_node_request_size_avg{clientId="producer-3",nodeId="node--1",} 40.0
-kafka_producer_node_request_size_avg{clientId="connector-producer-CsvSpoolDir-1",nodeId="node--1",} 62.0
-# HELP kafka_producer_topic_record_send_rate Kafka producer JMX metric type producer-topic
-# TYPE kafka_producer_topic_record_send_rate gauge
-kafka_producer_topic_record_send_rate{clientId="producer-3",topic="connect-configs",} 0.10608728862107743
-kafka_producer_topic_record_send_rate{clientId="producer-1",topic="connect-offsets",} 0.03190403266972945
-kafka_producer_topic_record_send_rate{clientId="producer-2",topic="connect-status",} 0.0698633008080855
-kafka_producer_topic_record_send_rate{clientId="connector-producer-CsvSpoolDir-0",topic="spooldir-testing-topic",} 24.409295059558676
 # HELP kafka_connect_connector_task_running_ratio Kafka Connect JMX metric type connector-task
 # TYPE kafka_connect_connector_task_running_ratio gauge
 kafka_connect_connector_task_running_ratio{connector="CsvSpoolDir",task="0",} 1.0
-kafka_connect_connector_task_running_ratio{connector="CsvSpoolDir",task="1",} 1.0
 # HELP kafka_producer_successful_reauthentication_total Kafka producer JMX metric type producer
 # TYPE kafka_producer_successful_reauthentication_total gauge
 kafka_producer_successful_reauthentication_total{clientId="producer-1",} 0.0
 kafka_producer_successful_reauthentication_total{clientId="producer-2",} 0.0
 kafka_producer_successful_reauthentication_total{clientId="producer-3",} 0.0
 kafka_producer_successful_reauthentication_total{clientId="connector-producer-CsvSpoolDir-0",} 0.0
-kafka_producer_successful_reauthentication_total{clientId="connector-producer-CsvSpoolDir-1",} 0.0
-# HELP kafka_connect_successful_reauthentication_rate Kafka connect JMX metric type connect
-# TYPE kafka_connect_successful_reauthentication_rate gauge
-kafka_connect_successful_reauthentication_rate{clientId="connect-1",} 0.0
 # HELP kafka_producer_record_send_total Kafka producer JMX metric type producer
 # TYPE kafka_producer_record_send_total gauge
-kafka_producer_record_send_total{clientId="producer-1",} 1.0
-kafka_producer_record_send_total{clientId="producer-2",} 3.0
-kafka_producer_record_send_total{clientId="producer-3",} 5.0
-kafka_producer_record_send_total{clientId="connector-producer-CsvSpoolDir-0",} 1000.0
-kafka_producer_record_send_total{clientId="connector-producer-CsvSpoolDir-1",} 0.0
-# HELP kafka_consumer_request_rate Kafka consumer JMX metric type consumer
-# TYPE kafka_consumer_request_rate gauge
-kafka_consumer_request_rate{clientId="consumer-connect-cluster-2",} 0.9554669325357262
-kafka_consumer_request_rate{clientId="consumer-connect-cluster-1",} 0.9490406436971323
-kafka_consumer_request_rate{clientId="consumer-connect-cluster-3",} 1.2037690423809722
+kafka_producer_record_send_total{clientId="producer-1",} 0.0
+kafka_producer_record_send_total{clientId="producer-2",} 2.0
+kafka_producer_record_send_total{clientId="producer-3",} 1.0
+kafka_producer_record_send_total{clientId="connector-producer-CsvSpoolDir-0",} 0.0
 # HELP kafka_connect_worker_task_count Kafka Connect JMX metric worker
 # TYPE kafka_connect_worker_task_count gauge
-kafka_connect_worker_task_count 2.0
-# HELP kafka_connect_outgoing_byte_rate Kafka connect JMX metric type connect
-# TYPE kafka_connect_outgoing_byte_rate gauge
-kafka_connect_outgoing_byte_rate{clientId="connect-1",} 56.419499517961185
-# HELP kafka_connect_coordinator_join_time_max Kafka connect JMX metric type connect-coordinator
-# TYPE kafka_connect_coordinator_join_time_max gauge
-kafka_connect_coordinator_join_time_max{clientId="connect-1",} 4.0
+kafka_connect_worker_task_count 1.0
 # HELP kafka_producer_network_io_total Kafka producer JMX metric type producer
 # TYPE kafka_producer_network_io_total gauge
-kafka_producer_network_io_total{clientId="producer-1",} 10.0
-kafka_producer_network_io_total{clientId="producer-2",} 14.0
-kafka_producer_network_io_total{clientId="producer-3",} 18.0
-kafka_producer_network_io_total{clientId="connector-producer-CsvSpoolDir-0",} 266.0
-kafka_producer_network_io_total{clientId="connector-producer-CsvSpoolDir-1",} 4.0
+kafka_producer_network_io_total{clientId="producer-1",} 4.0
+kafka_producer_network_io_total{clientId="producer-2",} 12.0
+kafka_producer_network_io_total{clientId="producer-3",} 10.0
+kafka_producer_network_io_total{clientId="connector-producer-CsvSpoolDir-0",} 4.0
 # HELP kafka_connect_reauthentication_latency_avg Kafka connect JMX metric type connect
 # TYPE kafka_connect_reauthentication_latency_avg gauge
 kafka_connect_reauthentication_latency_avg{clientId="connect-1",} NaN
 # HELP kafka_consumer_io_ratio Kafka consumer JMX metric type consumer
 # TYPE kafka_consumer_io_ratio gauge
-kafka_consumer_io_ratio{clientId="consumer-connect-cluster-2",} 7.473494443867483E-4
-kafka_consumer_io_ratio{clientId="consumer-connect-cluster-1",} 8.526572318610361E-4
-kafka_consumer_io_ratio{clientId="consumer-connect-cluster-3",} 4.7140324187455897E-4
+kafka_consumer_io_ratio{clientId="consumer-connect-cluster-2",} 4.194437555824095E-4
+kafka_consumer_io_ratio{clientId="consumer-connect-cluster-1",} 6.971635403387361E-4
+kafka_consumer_io_ratio{clientId="consumer-connect-cluster-3",} 5.981201297844839E-4
 # HELP kafka_producer_successful_authentication_total Kafka producer JMX metric type producer
 # TYPE kafka_producer_successful_authentication_total gauge
 kafka_producer_successful_authentication_total{clientId="producer-1",} 0.0
 kafka_producer_successful_authentication_total{clientId="producer-2",} 0.0
 kafka_producer_successful_authentication_total{clientId="producer-3",} 0.0
 kafka_producer_successful_authentication_total{clientId="connector-producer-CsvSpoolDir-0",} 0.0
-kafka_producer_successful_authentication_total{clientId="connector-producer-CsvSpoolDir-1",} 0.0
-# HELP kafka_connect_incoming_byte_rate Kafka connect JMX metric type connect
-# TYPE kafka_connect_incoming_byte_rate gauge
-kafka_connect_incoming_byte_rate{clientId="connect-1",} 94.03948526637885
 # HELP kafka_connect_task_error_deadletterqueue_produce_failures Kafka Connect JMX metric type task-error
 # TYPE kafka_connect_task_error_deadletterqueue_produce_failures gauge
 kafka_connect_task_error_deadletterqueue_produce_failures{connector="CsvSpoolDir",task="0",} 0.0
-kafka_connect_task_error_deadletterqueue_produce_failures{connector="CsvSpoolDir",task="1",} 0.0
 # HELP kafka_consumer_node_response_total Kafka consumer JMX metric type consumer-node
 # TYPE kafka_consumer_node_response_total untyped
 kafka_consumer_node_response_total{clientId="consumer-connect-cluster-1",nodeId="node--1",} 3.0
 kafka_consumer_node_response_total{clientId="consumer-connect-cluster-2",nodeId="node--1",} 3.0
-kafka_consumer_node_response_total{clientId="consumer-connect-cluster-2",nodeId="node-0",} 43.0
-kafka_consumer_node_response_total{clientId="consumer-connect-cluster-3",nodeId="node-0",} 54.0
+kafka_consumer_node_response_total{clientId="consumer-connect-cluster-2",nodeId="node-0",} 24.0
+kafka_consumer_node_response_total{clientId="consumer-connect-cluster-3",nodeId="node-0",} 23.0
 kafka_consumer_node_response_total{clientId="consumer-connect-cluster-3",nodeId="node--1",} 3.0
-kafka_consumer_node_response_total{clientId="consumer-connect-cluster-1",nodeId="node-0",} 42.0
+kafka_consumer_node_response_total{clientId="consumer-connect-cluster-1",nodeId="node-0",} 21.0
 # HELP kafka_connect_task_error_total_errors_logged Kafka Connect JMX metric type task-error
 # TYPE kafka_connect_task_error_total_errors_logged gauge
 kafka_connect_task_error_total_errors_logged{connector="CsvSpoolDir",task="0",} 0.0
-kafka_connect_task_error_total_errors_logged{connector="CsvSpoolDir",task="1",} 0.0
-# HELP kafka_consumer_fetch_manager_records_lead_min Kafka consumer JMX metric type consumer-fetch-manager
-# TYPE kafka_consumer_fetch_manager_records_lead_min gauge
-kafka_consumer_fetch_manager_records_lead_min{clientId="consumer-connect-cluster-2",partition="4",topic="connect-status",} 0.0
-kafka_consumer_fetch_manager_records_lead_min{clientId="consumer-connect-cluster-1",} 0.0
-kafka_consumer_fetch_manager_records_lead_min{clientId="consumer-connect-cluster-1",partition="10",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lead_min{clientId="consumer-connect-cluster-2",partition="3",topic="connect-status",} 0.0
-kafka_consumer_fetch_manager_records_lead_min{clientId="consumer-connect-cluster-1",partition="14",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lead_min{clientId="consumer-connect-cluster-1",partition="8",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lead_min{clientId="consumer-connect-cluster-2",partition="0",topic="connect-status",} 0.0
-kafka_consumer_fetch_manager_records_lead_min{clientId="consumer-connect-cluster-1",partition="16",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lead_min{clientId="consumer-connect-cluster-1",partition="12",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lead_min{clientId="consumer-connect-cluster-1",partition="21",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lead_min{clientId="consumer-connect-cluster-1",partition="6",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lead_min{clientId="consumer-connect-cluster-1",partition="22",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lead_min{clientId="consumer-connect-cluster-1",partition="3",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lead_min{clientId="consumer-connect-cluster-1",partition="4",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lead_min{clientId="consumer-connect-cluster-1",partition="24",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lead_min{clientId="consumer-connect-cluster-1",partition="23",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lead_min{clientId="consumer-connect-cluster-1",partition="2",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lead_min{clientId="consumer-connect-cluster-1",partition="1",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lead_min{clientId="consumer-connect-cluster-1",partition="17",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lead_min{clientId="consumer-connect-cluster-2",partition="1",topic="connect-status",} 0.0
-kafka_consumer_fetch_manager_records_lead_min{clientId="consumer-connect-cluster-1",partition="0",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lead_min{clientId="consumer-connect-cluster-1",partition="18",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lead_min{clientId="consumer-connect-cluster-1",partition="19",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lead_min{clientId="consumer-connect-cluster-2",partition="2",topic="connect-status",} 0.0
-kafka_consumer_fetch_manager_records_lead_min{clientId="consumer-connect-cluster-1",partition="15",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lead_min{clientId="consumer-connect-cluster-3",} 1.0
-kafka_consumer_fetch_manager_records_lead_min{clientId="consumer-connect-cluster-1",partition="9",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lead_min{clientId="consumer-connect-cluster-3",partition="0",topic="connect-configs",} 1.0
-kafka_consumer_fetch_manager_records_lead_min{clientId="consumer-connect-cluster-1",partition="11",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lead_min{clientId="consumer-connect-cluster-1",partition="7",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lead_min{clientId="consumer-connect-cluster-1",partition="13",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lead_min{clientId="consumer-connect-cluster-1",partition="5",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lead_min{clientId="consumer-connect-cluster-1",partition="20",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lead_min{clientId="consumer-connect-cluster-2",} 0.0
-# HELP kafka_consumer_coordinator_commit_latency_max Kafka consumer JMX metric type consumer-coordinator
-# TYPE kafka_consumer_coordinator_commit_latency_max gauge
-kafka_consumer_coordinator_commit_latency_max{clientId="consumer-connect-cluster-1",} NaN
-kafka_consumer_coordinator_commit_latency_max{clientId="consumer-connect-cluster-3",} NaN
-kafka_consumer_coordinator_commit_latency_max{clientId="consumer-connect-cluster-2",} NaN
+# HELP kafka_connect_worker_connector_running_task_count Kafka Connect JMX metric CsvSpoolDir
+# TYPE kafka_connect_worker_connector_running_task_count gauge
+kafka_connect_worker_connector_running_task_count{connector="CsvSpoolDir",} 1.0
 # HELP kafka_producer_request_latency_avg Kafka producer JMX metric type producer
 # TYPE kafka_producer_request_latency_avg gauge
-kafka_producer_request_latency_avg{clientId="producer-1",} 8.0
-kafka_producer_request_latency_avg{clientId="producer-2",} 7.333333333333333
-kafka_producer_request_latency_avg{clientId="producer-3",} 5.4
-kafka_producer_request_latency_avg{clientId="connector-producer-CsvSpoolDir-0",} 4.007751937984496
-kafka_producer_request_latency_avg{clientId="connector-producer-CsvSpoolDir-1",} NaN
-# HELP kafka_consumer_connection_creation_rate Kafka consumer JMX metric type consumer
-# TYPE kafka_consumer_connection_creation_rate gauge
-kafka_consumer_connection_creation_rate{clientId="consumer-connect-cluster-2",} 0.041541177692387576
-kafka_consumer_connection_creation_rate{clientId="consumer-connect-cluster-1",} 0.041260082932766694
-kafka_consumer_connection_creation_rate{clientId="consumer-connect-cluster-3",} 0.041509277323481794
+kafka_producer_request_latency_avg{clientId="producer-1",} NaN
+kafka_producer_request_latency_avg{clientId="producer-2",} 5.0
+kafka_producer_request_latency_avg{clientId="producer-3",} 4.0
+kafka_producer_request_latency_avg{clientId="connector-producer-CsvSpoolDir-0",} NaN
 # HELP kafka_consumer_coordinator_partition_revoked_latency_avg Kafka consumer JMX metric type consumer-coordinator
 # TYPE kafka_consumer_coordinator_partition_revoked_latency_avg gauge
 kafka_consumer_coordinator_partition_revoked_latency_avg{clientId="consumer-connect-cluster-1",} NaN
 kafka_consumer_coordinator_partition_revoked_latency_avg{clientId="consumer-connect-cluster-3",} NaN
 kafka_consumer_coordinator_partition_revoked_latency_avg{clientId="consumer-connect-cluster-2",} NaN
-# HELP kafka_consumer_successful_authentication_rate Kafka consumer JMX metric type consumer
-# TYPE kafka_consumer_successful_authentication_rate gauge
-kafka_consumer_successful_authentication_rate{clientId="consumer-connect-cluster-2",} 0.0
-kafka_consumer_successful_authentication_rate{clientId="consumer-connect-cluster-1",} 0.0
-kafka_consumer_successful_authentication_rate{clientId="consumer-connect-cluster-3",} 0.0
-# HELP kafka_producer_start_time Kafka producer JMX metric start time ms
-# TYPE kafka_producer_start_time gauge
-kafka_producer_start_time{clientId="connector-producer-CsvSpoolDir-1",} 1.585183750783E12
-kafka_producer_start_time{clientId="connector-producer-CsvSpoolDir-0",} 1.585183750783E12
-kafka_producer_start_time{clientId="producer-3",} 1.585183744324E12
-kafka_producer_start_time{clientId="producer-1",} 1.585183743829E12
-kafka_producer_start_time{clientId="producer-2",} 1.585183744154E12
 # HELP kafka_connect_coordinator_rebalance_total Kafka connect JMX metric type connect-coordinator
 # TYPE kafka_connect_coordinator_rebalance_total gauge
-kafka_connect_coordinator_rebalance_total{clientId="connect-1",} 3.0
-# HELP kafka_connect_coordinator_heartbeat_response_time_max Kafka connect JMX metric type connect-coordinator
-# TYPE kafka_connect_coordinator_heartbeat_response_time_max gauge
-kafka_connect_coordinator_heartbeat_response_time_max{clientId="connect-1",} 5.0
+kafka_connect_coordinator_rebalance_total{clientId="connect-1",} 1.0
 # HELP kafka_connect_task_error_last_error_timestamp Kafka Connect JMX metric type task-error
 # TYPE kafka_connect_task_error_last_error_timestamp gauge
 kafka_connect_task_error_last_error_timestamp{connector="CsvSpoolDir",task="0",} 0.0
-kafka_connect_task_error_last_error_timestamp{connector="CsvSpoolDir",task="1",} 0.0
 # HELP kafka_connect_worker_task_startup_failure_percentage Kafka Connect JMX metric worker
 # TYPE kafka_connect_worker_task_startup_failure_percentage gauge
 kafka_connect_worker_task_startup_failure_percentage 0.0
 # HELP kafka_producer_metadata_age Kafka producer JMX metric type producer
 # TYPE kafka_producer_metadata_age gauge
-kafka_producer_metadata_age{clientId="producer-1",} 1.245
-kafka_producer_metadata_age{clientId="producer-2",} 12.782
-kafka_producer_metadata_age{clientId="producer-3",} 17.175
-kafka_producer_metadata_age{clientId="connector-producer-CsvSpoolDir-0",} 10.991
-kafka_producer_metadata_age{clientId="connector-producer-CsvSpoolDir-1",} 11.662
+kafka_producer_metadata_age{clientId="producer-1",} 8.349
+kafka_producer_metadata_age{clientId="producer-2",} 7.041
+kafka_producer_metadata_age{clientId="producer-3",} 6.999
+kafka_producer_metadata_age{clientId="connector-producer-CsvSpoolDir-0",} 7.178
 # HELP kafka_producer_topic_record_send_total Kafka producer JMX metric type producer-topic
 # TYPE kafka_producer_topic_record_send_total gauge
-kafka_producer_topic_record_send_total{clientId="producer-3",topic="connect-configs",} 5.0
-kafka_producer_topic_record_send_total{clientId="producer-1",topic="connect-offsets",} 1.0
-kafka_producer_topic_record_send_total{clientId="producer-2",topic="connect-status",} 3.0
-kafka_producer_topic_record_send_total{clientId="connector-producer-CsvSpoolDir-0",topic="spooldir-testing-topic",} 1000.0
+kafka_producer_topic_record_send_total{clientId="producer-3",topic="connect-configs",} 1.0
+kafka_producer_topic_record_send_total{clientId="producer-2",topic="connect-status",} 2.0
 # HELP kafka_producer_topic_record_retry_total Kafka producer JMX metric type producer-topic
 # TYPE kafka_producer_topic_record_retry_total gauge
 kafka_producer_topic_record_retry_total{clientId="producer-3",topic="connect-configs",} 0.0
-kafka_producer_topic_record_retry_total{clientId="producer-1",topic="connect-offsets",} 0.0
 kafka_producer_topic_record_retry_total{clientId="producer-2",topic="connect-status",} 0.0
-kafka_producer_topic_record_retry_total{clientId="connector-producer-CsvSpoolDir-0",topic="spooldir-testing-topic",} 0.0
 # HELP kafka_connect_coordinator_rebalance_latency_total Kafka connect JMX metric type connect-coordinator
 # TYPE kafka_connect_coordinator_rebalance_latency_total gauge
-kafka_connect_coordinator_rebalance_latency_total{clientId="connect-1",} 71.0
+kafka_connect_coordinator_rebalance_latency_total{clientId="connect-1",} 63.0
 # HELP kafka_connect_coordinator_sync_time_avg Kafka connect JMX metric type connect-coordinator
 # TYPE kafka_connect_coordinator_sync_time_avg gauge
-kafka_connect_coordinator_sync_time_avg{clientId="connect-1",} 3.0
+kafka_connect_coordinator_sync_time_avg{clientId="connect-1",} 12.0
 # HELP kafka_consumer_node_outgoing_byte_total Kafka consumer JMX metric type consumer-node
 # TYPE kafka_consumer_node_outgoing_byte_total untyped
 kafka_consumer_node_outgoing_byte_total{clientId="consumer-connect-cluster-1",nodeId="node--1",} 175.0
 kafka_consumer_node_outgoing_byte_total{clientId="consumer-connect-cluster-2",nodeId="node--1",} 174.0
-kafka_consumer_node_outgoing_byte_total{clientId="consumer-connect-cluster-2",nodeId="node-0",} 3820.0
-kafka_consumer_node_outgoing_byte_total{clientId="consumer-connect-cluster-3",nodeId="node-0",} 4585.0
+kafka_consumer_node_outgoing_byte_total{clientId="consumer-connect-cluster-2",nodeId="node-0",} 2497.0
+kafka_consumer_node_outgoing_byte_total{clientId="consumer-connect-cluster-3",nodeId="node-0",} 1987.0
 kafka_consumer_node_outgoing_byte_total{clientId="consumer-connect-cluster-3",nodeId="node--1",} 175.0
-kafka_consumer_node_outgoing_byte_total{clientId="consumer-connect-cluster-1",nodeId="node-0",} 5176.0
-# HELP kafka_connect_connector_task_batch_size_max Kafka Connect JMX metric type connector-task
-# TYPE kafka_connect_connector_task_batch_size_max gauge
-kafka_connect_connector_task_batch_size_max{connector="CsvSpoolDir",task="0",} 1000.0
-kafka_connect_connector_task_batch_size_max{connector="CsvSpoolDir",task="1",} NaN
-# HELP kafka_consumer_incoming_byte_rate Kafka consumer JMX metric type consumer
-# TYPE kafka_consumer_incoming_byte_rate gauge
-kafka_consumer_incoming_byte_rate{clientId="consumer-connect-cluster-2",} 72.18229404677828
-kafka_consumer_incoming_byte_rate{clientId="consumer-connect-cluster-1",} 132.45306375077368
-kafka_consumer_incoming_byte_rate{clientId="consumer-connect-cluster-3",} 149.3565794935658
-# HELP kafka_consumer_coordinator_partition_lost_latency_max Kafka consumer JMX metric type consumer-coordinator
-# TYPE kafka_consumer_coordinator_partition_lost_latency_max gauge
-kafka_consumer_coordinator_partition_lost_latency_max{clientId="consumer-connect-cluster-1",} NaN
-kafka_consumer_coordinator_partition_lost_latency_max{clientId="consumer-connect-cluster-3",} NaN
-kafka_consumer_coordinator_partition_lost_latency_max{clientId="consumer-connect-cluster-2",} NaN
+kafka_consumer_node_outgoing_byte_total{clientId="consumer-connect-cluster-1",nodeId="node-0",} 3206.0
 # HELP kafka_consumer_fetch_manager_fetch_size_avg Kafka consumer JMX metric type consumer-fetch-manager
 # TYPE kafka_consumer_fetch_manager_fetch_size_avg gauge
-kafka_consumer_fetch_manager_fetch_size_avg{clientId="consumer-connect-cluster-2",topic="connect-status",} 83.25
-kafka_consumer_fetch_manager_fetch_size_avg{clientId="consumer-connect-cluster-1",} 38.5
-kafka_consumer_fetch_manager_fetch_size_avg{clientId="consumer-connect-cluster-3",topic="connect-configs",} 638.6666666666666
-kafka_consumer_fetch_manager_fetch_size_avg{clientId="consumer-connect-cluster-1",topic="connect-offsets",} 38.5
-kafka_consumer_fetch_manager_fetch_size_avg{clientId="consumer-connect-cluster-3",} 638.6666666666666
-kafka_consumer_fetch_manager_fetch_size_avg{clientId="consumer-connect-cluster-2",} 83.25
-# HELP kafka_producer_topic_record_retry_rate Kafka producer JMX metric type producer-topic
-# TYPE kafka_producer_topic_record_retry_rate gauge
-kafka_producer_topic_record_retry_rate{clientId="producer-3",topic="connect-configs",} 0.0
-kafka_producer_topic_record_retry_rate{clientId="producer-1",topic="connect-offsets",} 0.0
-kafka_producer_topic_record_retry_rate{clientId="producer-2",topic="connect-status",} 0.0
-kafka_producer_topic_record_retry_rate{clientId="connector-producer-CsvSpoolDir-0",topic="spooldir-testing-topic",} 0.0
+kafka_consumer_fetch_manager_fetch_size_avg{clientId="consumer-connect-cluster-2",topic="connect-status",} 6653.0
+kafka_consumer_fetch_manager_fetch_size_avg{clientId="consumer-connect-cluster-1",} 77.0
+kafka_consumer_fetch_manager_fetch_size_avg{clientId="consumer-connect-cluster-3",topic="connect-configs",} 2119.5
+kafka_consumer_fetch_manager_fetch_size_avg{clientId="consumer-connect-cluster-1",topic="connect-offsets",} 77.0
+kafka_consumer_fetch_manager_fetch_size_avg{clientId="consumer-connect-cluster-3",} 2119.5
+kafka_consumer_fetch_manager_fetch_size_avg{clientId="consumer-connect-cluster-2",} 6653.0
 # HELP kafka_consumer_io_wait_ratio Kafka consumer JMX metric type consumer
 # TYPE kafka_consumer_io_wait_ratio gauge
-kafka_consumer_io_wait_ratio{clientId="consumer-connect-cluster-2",} 0.3649189536410086
-kafka_consumer_io_wait_ratio{clientId="consumer-connect-cluster-1",} 0.37296100709658786
-kafka_consumer_io_wait_ratio{clientId="consumer-connect-cluster-3",} 0.3675717181163481
+kafka_consumer_io_wait_ratio{clientId="consumer-connect-cluster-2",} 0.20498481461633436
+kafka_consumer_io_wait_ratio{clientId="consumer-connect-cluster-1",} 0.20789075734949788
+kafka_consumer_io_wait_ratio{clientId="consumer-connect-cluster-3",} 0.20181827644420997
 # HELP kafka_connect_successful_reauthentication_total Kafka connect JMX metric type connect
 # TYPE kafka_connect_successful_reauthentication_total gauge
 kafka_connect_successful_reauthentication_total{clientId="connect-1",} 0.0
 # HELP kafka_consumer_fetch_manager_fetch_latency_avg Kafka consumer JMX metric type consumer-fetch-manager
 # TYPE kafka_consumer_fetch_manager_fetch_latency_avg gauge
-kafka_consumer_fetch_manager_fetch_latency_avg{clientId="consumer-connect-cluster-1",} 490.8611111111111
-kafka_consumer_fetch_manager_fetch_latency_avg{clientId="consumer-connect-cluster-3",} 434.2926829268293
-kafka_consumer_fetch_manager_fetch_latency_avg{clientId="consumer-connect-cluster-2",} 477.1578947368421
+kafka_consumer_fetch_manager_fetch_latency_avg{clientId="consumer-connect-cluster-1",} 472.125
+kafka_consumer_fetch_manager_fetch_latency_avg{clientId="consumer-connect-cluster-3",} 452.8235294117647
+kafka_consumer_fetch_manager_fetch_latency_avg{clientId="consumer-connect-cluster-2",} 439.22222222222223
 # HELP kafka_producer_outgoing_byte_total Kafka producer JMX metric type producer
 # TYPE kafka_producer_outgoing_byte_total gauge
-kafka_producer_outgoing_byte_total{clientId="producer-1",} 380.0
-kafka_producer_outgoing_byte_total{clientId="producer-2",} 884.0
-kafka_producer_outgoing_byte_total{clientId="producer-3",} 4505.0
-kafka_producer_outgoing_byte_total{clientId="connector-producer-CsvSpoolDir-0",} 1257646.0
-kafka_producer_outgoing_byte_total{clientId="connector-producer-CsvSpoolDir-1",} 124.0
+kafka_producer_outgoing_byte_total{clientId="producer-1",} 80.0
+kafka_producer_outgoing_byte_total{clientId="producer-2",} 2009.0
+kafka_producer_outgoing_byte_total{clientId="producer-3",} 437.0
+kafka_producer_outgoing_byte_total{clientId="connector-producer-CsvSpoolDir-0",} 124.0
 # HELP kafka_connect_response_total Kafka connect JMX metric type connect
 # TYPE kafka_connect_response_total gauge
-kafka_connect_response_total{clientId="connect-1",} 15.0
+kafka_connect_response_total{clientId="connect-1",} 9.0
 # HELP kafka_producer_compression_rate_avg Kafka producer JMX metric type producer
 # TYPE kafka_producer_compression_rate_avg gauge
-kafka_producer_compression_rate_avg{clientId="producer-1",} 1.0
+kafka_producer_compression_rate_avg{clientId="producer-1",} NaN
 kafka_producer_compression_rate_avg{clientId="producer-2",} 1.0
 kafka_producer_compression_rate_avg{clientId="producer-3",} 1.0
-kafka_producer_compression_rate_avg{clientId="connector-producer-CsvSpoolDir-0",} 1.0
-kafka_producer_compression_rate_avg{clientId="connector-producer-CsvSpoolDir-1",} NaN
+kafka_producer_compression_rate_avg{clientId="connector-producer-CsvSpoolDir-0",} NaN
 # HELP kafka_producer_batch_size_avg Kafka producer JMX metric type producer
 # TYPE kafka_producer_batch_size_avg gauge
-kafka_producer_batch_size_avg{clientId="producer-1",} 138.0
-kafka_producer_batch_size_avg{clientId="producer-2",} 172.0
-kafka_producer_batch_size_avg{clientId="producer-3",} 800.6
-kafka_producer_batch_size_avg{clientId="connector-producer-CsvSpoolDir-0",} 9653.08527131783
-kafka_producer_batch_size_avg{clientId="connector-producer-CsvSpoolDir-1",} NaN
-# HELP kafka_consumer_node_request_size_max Kafka consumer JMX metric type consumer-node
-# TYPE kafka_consumer_node_request_size_max untyped
-kafka_consumer_node_request_size_max{clientId="consumer-connect-cluster-1",nodeId="node--1",} 66.0
-kafka_consumer_node_request_size_max{clientId="consumer-connect-cluster-2",nodeId="node--1",} 66.0
-kafka_consumer_node_request_size_max{clientId="consumer-connect-cluster-2",nodeId="node-0",} 235.0
-kafka_consumer_node_request_size_max{clientId="consumer-connect-cluster-3",nodeId="node-0",} 124.0
-kafka_consumer_node_request_size_max{clientId="consumer-connect-cluster-3",nodeId="node--1",} 66.0
-kafka_consumer_node_request_size_max{clientId="consumer-connect-cluster-1",nodeId="node-0",} 796.0
-# HELP kafka_consumer_node_incoming_byte_rate Kafka consumer JMX metric type consumer-node
-# TYPE kafka_consumer_node_incoming_byte_rate untyped
-kafka_consumer_node_incoming_byte_rate{clientId="consumer-connect-cluster-1",nodeId="node--1",} 24.28621710594422
-kafka_consumer_node_incoming_byte_rate{clientId="consumer-connect-cluster-2",nodeId="node--1",} 13.562706716868096
-kafka_consumer_node_incoming_byte_rate{clientId="consumer-connect-cluster-2",nodeId="node-0",} 58.85273370430897
-kafka_consumer_node_incoming_byte_rate{clientId="consumer-connect-cluster-3",nodeId="node-0",} 137.9618098796181
-kafka_consumer_node_incoming_byte_rate{clientId="consumer-connect-cluster-3",nodeId="node--1",} 11.380125202106049
-kafka_consumer_node_incoming_byte_rate{clientId="consumer-connect-cluster-1",nodeId="node-0",} 107.9096742349457
+kafka_producer_batch_size_avg{clientId="producer-1",} NaN
+kafka_producer_batch_size_avg{clientId="producer-2",} 852.5
+kafka_producer_batch_size_avg{clientId="producer-3",} 195.0
+kafka_producer_batch_size_avg{clientId="connector-producer-CsvSpoolDir-0",} NaN
 # HELP kafka_producer_connection_close_total Kafka producer JMX metric type producer
 # TYPE kafka_producer_connection_close_total gauge
 kafka_producer_connection_close_total{clientId="producer-1",} 0.0
 kafka_producer_connection_close_total{clientId="producer-2",} 0.0
 kafka_producer_connection_close_total{clientId="producer-3",} 0.0
 kafka_producer_connection_close_total{clientId="connector-producer-CsvSpoolDir-0",} 0.0
-kafka_producer_connection_close_total{clientId="connector-producer-CsvSpoolDir-1",} 0.0
-# HELP kafka_connect_node_request_size_max Kafka connect JMX metric type connect-node
-# TYPE kafka_connect_node_request_size_max untyped
-kafka_connect_node_request_size_max{clientId="connect-1",nodeId="node-2147483647",} 487.0
-kafka_connect_node_request_size_max{clientId="connect-1",nodeId="node--1",} 49.0
-# HELP kafka_connect_connection_creation_rate Kafka connect JMX metric type connect
-# TYPE kafka_connect_connection_creation_rate gauge
-kafka_connect_connection_creation_rate{clientId="connect-1",} 0.04191554018652415
 # HELP kafka_consumer_coordinator_heartbeat_total Kafka consumer JMX metric type consumer-coordinator
 # TYPE kafka_consumer_coordinator_heartbeat_total gauge
 kafka_consumer_coordinator_heartbeat_total{clientId="consumer-connect-cluster-1",} 0.0
 kafka_consumer_coordinator_heartbeat_total{clientId="consumer-connect-cluster-3",} 0.0
 kafka_consumer_coordinator_heartbeat_total{clientId="consumer-connect-cluster-2",} 0.0
-# HELP kafka_consumer_reauthentication_latency_max Kafka consumer JMX metric type consumer
-# TYPE kafka_consumer_reauthentication_latency_max gauge
-kafka_consumer_reauthentication_latency_max{clientId="consumer-connect-cluster-2",} NaN
-kafka_consumer_reauthentication_latency_max{clientId="consumer-connect-cluster-1",} NaN
-kafka_consumer_reauthentication_latency_max{clientId="consumer-connect-cluster-3",} NaN
 # HELP kafka_connect_coordinator_assigned_tasks Kafka connect JMX metric type connect-coordinator
 # TYPE kafka_connect_coordinator_assigned_tasks gauge
-kafka_connect_coordinator_assigned_tasks{clientId="connect-1",} 2.0
-# HELP kafka_consumer_node_response_rate Kafka consumer JMX metric type consumer-node
-# TYPE kafka_consumer_node_response_rate untyped
-kafka_consumer_node_response_rate{clientId="consumer-connect-cluster-1",nodeId="node--1",} 0.06211308722747883
-kafka_consumer_node_response_rate{clientId="consumer-connect-cluster-2",nodeId="node--1",} 0.06240509225552805
-kafka_consumer_node_response_rate{clientId="consumer-connect-cluster-2",nodeId="node-0",} 0.8895140770774291
-kafka_consumer_node_response_rate{clientId="consumer-connect-cluster-3",nodeId="node-0",} 1.1207970112079702
-kafka_consumer_node_response_rate{clientId="consumer-connect-cluster-3",nodeId="node--1",} 0.06218647651424071
-kafka_consumer_node_response_rate{clientId="consumer-connect-cluster-1",nodeId="node-0",} 0.8637709772951628
-# HELP kafka_connect_select_rate Kafka connect JMX metric type connect
-# TYPE kafka_connect_select_rate gauge
-kafka_connect_select_rate{clientId="connect-1",} 8.00519709130535
+kafka_connect_coordinator_assigned_tasks{clientId="connect-1",} 1.0
 # HELP kafka_connect_task_error_total_record_failures Kafka Connect JMX metric type task-error
 # TYPE kafka_connect_task_error_total_record_failures gauge
 kafka_connect_task_error_total_record_failures{connector="CsvSpoolDir",task="0",} 0.0
-kafka_connect_task_error_total_record_failures{connector="CsvSpoolDir",task="1",} 0.0
 # HELP kafka_connect_coordinator_last_heartbeat_seconds_ago Kafka connect JMX metric type connect-coordinator
 # TYPE kafka_connect_coordinator_last_heartbeat_seconds_ago gauge
-kafka_connect_coordinator_last_heartbeat_seconds_ago{clientId="connect-1",} 2.0
-# HELP kafka_connect_node_request_latency_max Kafka connect JMX metric type connect-node
-# TYPE kafka_connect_node_request_latency_max untyped
-kafka_connect_node_request_latency_max{clientId="connect-1",nodeId="node-2147483647",} NaN
-kafka_connect_node_request_latency_max{clientId="connect-1",nodeId="node--1",} NaN
+kafka_connect_coordinator_last_heartbeat_seconds_ago{clientId="connect-1",} 1.0
 # HELP kafka_consumer_failed_authentication_total Kafka consumer JMX metric type consumer
 # TYPE kafka_consumer_failed_authentication_total gauge
 kafka_consumer_failed_authentication_total{clientId="consumer-connect-cluster-2",} 0.0
@@ -1445,7 +910,6 @@ kafka_producer_failed_reauthentication_total{clientId="producer-1",} 0.0
 kafka_producer_failed_reauthentication_total{clientId="producer-2",} 0.0
 kafka_producer_failed_reauthentication_total{clientId="producer-3",} 0.0
 kafka_producer_failed_reauthentication_total{clientId="connector-producer-CsvSpoolDir-0",} 0.0
-kafka_producer_failed_reauthentication_total{clientId="connector-producer-CsvSpoolDir-1",} 0.0
 # HELP kafka_consumer_successful_authentication_no_reauth_total Kafka consumer JMX metric type consumer
 # TYPE kafka_consumer_successful_authentication_no_reauth_total gauge
 kafka_consumer_successful_authentication_no_reauth_total{clientId="consumer-connect-cluster-2",} 0.0
@@ -1454,82 +918,39 @@ kafka_consumer_successful_authentication_no_reauth_total{clientId="consumer-conn
 # HELP kafka_connect_connection_close_total Kafka connect JMX metric type connect
 # TYPE kafka_connect_connection_close_total gauge
 kafka_connect_connection_close_total{clientId="connect-1",} 0.0
-# HELP kafka_consumer_request_size_max Kafka consumer JMX metric type consumer
-# TYPE kafka_consumer_request_size_max gauge
-kafka_consumer_request_size_max{clientId="consumer-connect-cluster-2",} 235.0
-kafka_consumer_request_size_max{clientId="consumer-connect-cluster-1",} 796.0
-kafka_consumer_request_size_max{clientId="consumer-connect-cluster-3",} 124.0
 # HELP kafka_consumer_coordinator_rebalance_latency_avg Kafka consumer JMX metric type consumer-coordinator
 # TYPE kafka_consumer_coordinator_rebalance_latency_avg gauge
 kafka_consumer_coordinator_rebalance_latency_avg{clientId="consumer-connect-cluster-1",} NaN
 kafka_consumer_coordinator_rebalance_latency_avg{clientId="consumer-connect-cluster-3",} NaN
 kafka_consumer_coordinator_rebalance_latency_avg{clientId="consumer-connect-cluster-2",} NaN
-# HELP kafka_connect_request_rate Kafka connect JMX metric type connect
-# TYPE kafka_connect_request_rate gauge
-kafka_connect_request_rate{clientId="connect-1",} 0.3143665513989311
-# HELP kafka_connect_coordinator_rebalance_latency_max Kafka connect JMX metric type connect-coordinator
-# TYPE kafka_connect_coordinator_rebalance_latency_max gauge
-kafka_connect_coordinator_rebalance_latency_max{clientId="connect-1",} 50.0
 # HELP kafka_connect_worker_rebalance_completed_rebalances_total Kafka Connect JMX metric rebalance information
 # TYPE kafka_connect_worker_rebalance_completed_rebalances_total gauge
-kafka_connect_worker_rebalance_completed_rebalances_total 3.0
+kafka_connect_worker_rebalance_completed_rebalances_total 1.0
 # HELP kafka_connect_worker_connector_startup_failure_total Kafka Connect JMX metric worker
 # TYPE kafka_connect_worker_connector_startup_failure_total gauge
 kafka_connect_worker_connector_startup_failure_total 0.0
+# HELP kafka_connect_worker_connector_failed_task_count Kafka Connect JMX metric CsvSpoolDir
+# TYPE kafka_connect_worker_connector_failed_task_count gauge
+kafka_connect_worker_connector_failed_task_count{connector="CsvSpoolDir",} 0.0
 # HELP kafka_consumer_coordinator_join_total Kafka consumer JMX metric type consumer-coordinator
 # TYPE kafka_consumer_coordinator_join_total gauge
 kafka_consumer_coordinator_join_total{clientId="consumer-connect-cluster-1",} 0.0
 kafka_consumer_coordinator_join_total{clientId="consumer-connect-cluster-3",} 0.0
 kafka_consumer_coordinator_join_total{clientId="consumer-connect-cluster-2",} 0.0
-# HELP kafka_producer_produce_throttle_time_max Kafka producer JMX metric type producer
-# TYPE kafka_producer_produce_throttle_time_max gauge
-kafka_producer_produce_throttle_time_max{clientId="producer-1",} 0.0
-kafka_producer_produce_throttle_time_max{clientId="producer-2",} 0.0
-kafka_producer_produce_throttle_time_max{clientId="producer-3",} 0.0
-kafka_producer_produce_throttle_time_max{clientId="connector-producer-CsvSpoolDir-0",} 0.0
-kafka_producer_produce_throttle_time_max{clientId="connector-producer-CsvSpoolDir-1",} 0.0
 # HELP kafka_producer_waiting_threads Kafka producer JMX metric type producer
 # TYPE kafka_producer_waiting_threads gauge
 kafka_producer_waiting_threads{clientId="producer-1",} 0.0
 kafka_producer_waiting_threads{clientId="producer-2",} 0.0
 kafka_producer_waiting_threads{clientId="producer-3",} 0.0
 kafka_producer_waiting_threads{clientId="connector-producer-CsvSpoolDir-0",} 0.0
-kafka_producer_waiting_threads{clientId="connector-producer-CsvSpoolDir-1",} 0.0
 # HELP kafka_consumer_coordinator_partition_assigned_latency_avg Kafka consumer JMX metric type consumer-coordinator
 # TYPE kafka_consumer_coordinator_partition_assigned_latency_avg gauge
 kafka_consumer_coordinator_partition_assigned_latency_avg{clientId="consumer-connect-cluster-1",} NaN
 kafka_consumer_coordinator_partition_assigned_latency_avg{clientId="consumer-connect-cluster-3",} NaN
 kafka_consumer_coordinator_partition_assigned_latency_avg{clientId="consumer-connect-cluster-2",} NaN
-# HELP kafka_consumer_coordinator_rebalance_rate_per_hour Kafka consumer JMX metric type consumer-coordinator
-# TYPE kafka_consumer_coordinator_rebalance_rate_per_hour gauge
-kafka_consumer_coordinator_rebalance_rate_per_hour{clientId="consumer-connect-cluster-1",} 0.0
-kafka_consumer_coordinator_rebalance_rate_per_hour{clientId="consumer-connect-cluster-3",} 0.0
-kafka_consumer_coordinator_rebalance_rate_per_hour{clientId="consumer-connect-cluster-2",} 0.0
-# HELP kafka_consumer_time_between_poll_max Kafka consumer JMX metric type consumer
-# TYPE kafka_consumer_time_between_poll_max gauge
-kafka_consumer_time_between_poll_max{clientId="consumer-connect-cluster-2",} 5061.0
-kafka_consumer_time_between_poll_max{clientId="consumer-connect-cluster-1",} 9620.0
-kafka_consumer_time_between_poll_max{clientId="consumer-connect-cluster-3",} 3192.0
-# HELP kafka_producer_record_retry_rate Kafka producer JMX metric type producer
-# TYPE kafka_producer_record_retry_rate gauge
-kafka_producer_record_retry_rate{clientId="producer-1",} 0.0
-kafka_producer_record_retry_rate{clientId="producer-2",} 0.0
-kafka_producer_record_retry_rate{clientId="producer-3",} 0.0
-kafka_producer_record_retry_rate{clientId="connector-producer-CsvSpoolDir-0",} 0.0
-kafka_producer_record_retry_rate{clientId="connector-producer-CsvSpoolDir-1",} 0.0
-# HELP kafka_consumer_failed_reauthentication_rate Kafka consumer JMX metric type consumer
-# TYPE kafka_consumer_failed_reauthentication_rate gauge
-kafka_consumer_failed_reauthentication_rate{clientId="consumer-connect-cluster-2",} 0.0
-kafka_consumer_failed_reauthentication_rate{clientId="consumer-connect-cluster-1",} 0.0
-kafka_consumer_failed_reauthentication_rate{clientId="consumer-connect-cluster-3",} 0.0
 # HELP kafka_connect_worker_connector_startup_success_total Kafka Connect JMX metric worker
 # TYPE kafka_connect_worker_connector_startup_success_total gauge
 kafka_connect_worker_connector_startup_success_total 1.0
-# HELP kafka_consumer_failed_authentication_rate Kafka consumer JMX metric type consumer
-# TYPE kafka_consumer_failed_authentication_rate gauge
-kafka_consumer_failed_authentication_rate{clientId="consumer-connect-cluster-2",} 0.0
-kafka_consumer_failed_authentication_rate{clientId="consumer-connect-cluster-1",} 0.0
-kafka_consumer_failed_authentication_rate{clientId="consumer-connect-cluster-3",} 0.0
 # HELP kafka_consumer_coordinator_sync_time_avg Kafka consumer JMX metric type consumer-coordinator
 # TYPE kafka_consumer_coordinator_sync_time_avg gauge
 kafka_consumer_coordinator_sync_time_avg{clientId="consumer-connect-cluster-1",} NaN
@@ -1540,25 +961,9 @@ kafka_consumer_coordinator_sync_time_avg{clientId="consumer-connect-cluster-2",}
 kafka_consumer_coordinator_commit_total{clientId="consumer-connect-cluster-1",} 0.0
 kafka_consumer_coordinator_commit_total{clientId="consumer-connect-cluster-3",} 0.0
 kafka_consumer_coordinator_commit_total{clientId="consumer-connect-cluster-2",} 0.0
-# HELP kafka_producer_node_request_size_max Kafka producer JMX metric type producer-node
-# TYPE kafka_producer_node_request_size_max untyped
-kafka_producer_node_request_size_max{clientId="producer-3",nodeId="node-0",} 1621.0
-kafka_producer_node_request_size_max{clientId="producer-1",nodeId="node-0",} 203.0
-kafka_producer_node_request_size_max{clientId="connector-producer-CsvSpoolDir-0",nodeId="node-0",} 16284.0
-kafka_producer_node_request_size_max{clientId="producer-2",nodeId="node--1",} 50.0
-kafka_producer_node_request_size_max{clientId="producer-1",nodeId="node--1",} 50.0
-kafka_producer_node_request_size_max{clientId="producer-2",nodeId="node-0",} 238.0
-kafka_producer_node_request_size_max{clientId="connector-producer-CsvSpoolDir-0",nodeId="node--1",} 72.0
-kafka_producer_node_request_size_max{clientId="producer-3",nodeId="node--1",} 50.0
-kafka_producer_node_request_size_max{clientId="connector-producer-CsvSpoolDir-1",nodeId="node--1",} 72.0
-# HELP kafka_consumer_node_outgoing_byte_rate Kafka consumer JMX metric type consumer-node
-# TYPE kafka_consumer_node_outgoing_byte_rate untyped
-kafka_consumer_node_outgoing_byte_rate{clientId="consumer-connect-cluster-1",nodeId="node--1",} 3.623263421602932
-kafka_consumer_node_outgoing_byte_rate{clientId="consumer-connect-cluster-2",nodeId="node--1",} 3.619344773790951
-kafka_consumer_node_outgoing_byte_rate{clientId="consumer-connect-cluster-2",nodeId="node-0",} 79.02031359894089
-kafka_consumer_node_outgoing_byte_rate{clientId="consumer-connect-cluster-3",nodeId="node-0",} 95.16199331686765
-kafka_consumer_node_outgoing_byte_rate{clientId="consumer-connect-cluster-3",nodeId="node--1",} 3.6273940800928615
-kafka_consumer_node_outgoing_byte_rate{clientId="consumer-connect-cluster-1",nodeId="node-0",} 106.44730077120822
+# HELP kafka_connect_worker_connector_unassigned_task_count Kafka Connect JMX metric CsvSpoolDir
+# TYPE kafka_connect_worker_connector_unassigned_task_count gauge
+kafka_connect_worker_connector_unassigned_task_count{connector="CsvSpoolDir",} 0.0
 # HELP kafka_consumer_coordinator_failed_rebalance_total Kafka consumer JMX metric type consumer-coordinator
 # TYPE kafka_consumer_coordinator_failed_rebalance_total gauge
 kafka_consumer_coordinator_failed_rebalance_total{clientId="consumer-connect-cluster-1",} 0.0
@@ -1567,109 +972,101 @@ kafka_consumer_coordinator_failed_rebalance_total{clientId="consumer-connect-clu
 # HELP kafka_consumer_fetch_manager_records_lead Kafka consumer JMX metric type consumer-fetch-manager
 # TYPE kafka_consumer_fetch_manager_records_lead gauge
 kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-2",partition="4",topic="connect-status",} 0.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-2",partition="4",topic="connect-status",} 0.0
 kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="10",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-2",partition="3",topic="connect-status",} 1.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="10",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-2",partition="3",topic="connect-status",} 23.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-2",partition="3",topic="connect-status",} 24.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="14",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="14",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="8",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="8",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-2",partition="0",topic="connect-status",} 0.0
 kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-2",partition="0",topic="connect-status",} 0.0
 kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="16",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="16",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="12",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="12",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="21",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="21",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="6",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="6",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="22",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="22",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="3",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="3",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="4",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="4",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="24",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="24",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="23",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="23",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="2",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="2",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="1",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="1",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="17",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-2",partition="1",topic="connect-status",} 1.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="17",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-2",partition="1",topic="connect-status",} 20.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-2",partition="1",topic="connect-status",} 21.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="0",topic="connect-offsets",} 1.0
 kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="0",topic="connect-offsets",} 1.0
 kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="18",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="18",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="19",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-2",partition="2",topic="connect-status",} 1.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="19",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-2",partition="2",topic="connect-status",} 0.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-2",partition="2",topic="connect-status",} 0.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="15",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="15",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="9",topic="connect-offsets",} 0.0
-kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-3",partition="0",topic="connect-configs",} 6.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="9",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-3",partition="0",topic="connect-configs",} 18.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-3",partition="0",topic="connect-configs",} 19.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="11",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="11",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="7",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="7",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="13",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="13",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="5",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="5",topic="connect-offsets",} 0.0
+kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="20",topic="connect-offsets",} 0.0
 kafka_consumer_fetch_manager_records_lead{clientId="consumer-connect-cluster-1",partition="20",topic="connect-offsets",} 0.0
 # HELP kafka_producer_request_total Kafka producer JMX metric type producer
 # TYPE kafka_producer_request_total gauge
-kafka_producer_request_total{clientId="producer-1",} 5.0
-kafka_producer_request_total{clientId="producer-2",} 7.0
-kafka_producer_request_total{clientId="producer-3",} 9.0
-kafka_producer_request_total{clientId="connector-producer-CsvSpoolDir-0",} 133.0
-kafka_producer_request_total{clientId="connector-producer-CsvSpoolDir-1",} 2.0
-# HELP kafka_consumer_coordinator_assigned_partitions Kafka consumer JMX metric type consumer-coordinator
-# TYPE kafka_consumer_coordinator_assigned_partitions gauge
-kafka_consumer_coordinator_assigned_partitions{clientId="consumer-connect-cluster-1",} 25.0
-kafka_consumer_coordinator_assigned_partitions{clientId="consumer-connect-cluster-3",} 1.0
-kafka_consumer_coordinator_assigned_partitions{clientId="consumer-connect-cluster-2",} 5.0
-# HELP kafka_producer_node_request_rate Kafka producer JMX metric type producer-node
-# TYPE kafka_producer_node_request_rate untyped
-kafka_producer_node_request_rate{clientId="producer-3",nodeId="node-0",} 0.1487462813429664
-kafka_producer_node_request_rate{clientId="producer-1",nodeId="node-0",} 0.09593859929645027
-kafka_producer_node_request_rate{clientId="connector-producer-CsvSpoolDir-0",nodeId="node-0",} 3.208110887985502
-kafka_producer_node_request_rate{clientId="producer-2",nodeId="node--1",} 0.04169446297531688
-kafka_producer_node_request_rate{clientId="producer-1",nodeId="node--1",} 0.041284782429196594
-kafka_producer_node_request_rate{clientId="producer-2",nodeId="node-0",} 0.11594471755866802
-kafka_producer_node_request_rate{clientId="connector-producer-CsvSpoolDir-0",nodeId="node--1",} 0.04786292059541473
-kafka_producer_node_request_rate{clientId="producer-3",nodeId="node--1",} 0.04146022927506789
-kafka_producer_node_request_rate{clientId="connector-producer-CsvSpoolDir-1",nodeId="node--1",} 0.047842311740503296
-# HELP kafka_connect_coordinator_join_rate Kafka connect JMX metric type connect-coordinator
-# TYPE kafka_connect_coordinator_join_rate gauge
-kafka_connect_coordinator_join_rate{clientId="connect-1",} 0.06238173462810089
-# HELP kafka_connect_node_response_rate Kafka connect JMX metric type connect-node
-# TYPE kafka_connect_node_response_rate untyped
-kafka_connect_node_response_rate{clientId="connect-1",nodeId="node-2147483647",} 0.2518045996306866
-kafka_connect_node_response_rate{clientId="connect-1",nodeId="node--1",} 0.06245706077072013
+kafka_producer_request_total{clientId="producer-1",} 2.0
+kafka_producer_request_total{clientId="producer-2",} 6.0
+kafka_producer_request_total{clientId="producer-3",} 5.0
+kafka_producer_request_total{clientId="connector-producer-CsvSpoolDir-0",} 2.0
 # HELP kafka_producer_node_request_latency_avg Kafka producer JMX metric type producer-node
 # TYPE kafka_producer_node_request_latency_avg untyped
-kafka_producer_node_request_latency_avg{clientId="producer-3",nodeId="node-0",} 5.4
-kafka_producer_node_request_latency_avg{clientId="producer-1",nodeId="node-0",} 8.0
-kafka_producer_node_request_latency_avg{clientId="connector-producer-CsvSpoolDir-0",nodeId="node-0",} 4.007751937984496
+kafka_producer_node_request_latency_avg{clientId="producer-3",nodeId="node-0",} 4.0
 kafka_producer_node_request_latency_avg{clientId="producer-2",nodeId="node--1",} NaN
 kafka_producer_node_request_latency_avg{clientId="producer-1",nodeId="node--1",} NaN
-kafka_producer_node_request_latency_avg{clientId="producer-2",nodeId="node-0",} 7.333333333333333
+kafka_producer_node_request_latency_avg{clientId="producer-2",nodeId="node-0",} 5.0
 kafka_producer_node_request_latency_avg{clientId="connector-producer-CsvSpoolDir-0",nodeId="node--1",} NaN
 kafka_producer_node_request_latency_avg{clientId="producer-3",nodeId="node--1",} NaN
-kafka_producer_node_request_latency_avg{clientId="connector-producer-CsvSpoolDir-1",nodeId="node--1",} NaN
 # HELP kafka_consumer_node_request_total Kafka consumer JMX metric type consumer-node
 # TYPE kafka_consumer_node_request_total untyped
 kafka_consumer_node_request_total{clientId="consumer-connect-cluster-1",nodeId="node--1",} 3.0
 kafka_consumer_node_request_total{clientId="consumer-connect-cluster-2",nodeId="node--1",} 3.0
-kafka_consumer_node_request_total{clientId="consumer-connect-cluster-2",nodeId="node-0",} 44.0
-kafka_consumer_node_request_total{clientId="consumer-connect-cluster-3",nodeId="node-0",} 55.0
+kafka_consumer_node_request_total{clientId="consumer-connect-cluster-2",nodeId="node-0",} 25.0
+kafka_consumer_node_request_total{clientId="consumer-connect-cluster-3",nodeId="node-0",} 24.0
 kafka_consumer_node_request_total{clientId="consumer-connect-cluster-3",nodeId="node--1",} 3.0
-kafka_consumer_node_request_total{clientId="consumer-connect-cluster-1",nodeId="node-0",} 43.0
+kafka_consumer_node_request_total{clientId="consumer-connect-cluster-1",nodeId="node-0",} 22.0
 # HELP kafka_connect_request_size_avg Kafka connect JMX metric type connect
 # TYPE kafka_connect_request_size_avg gauge
-kafka_connect_request_size_avg{clientId="connect-1",} 179.46666666666667
-# HELP kafka_producer_successful_authentication_rate Kafka producer JMX metric type producer
-# TYPE kafka_producer_successful_authentication_rate gauge
-kafka_producer_successful_authentication_rate{clientId="producer-1",} 0.0
-kafka_producer_successful_authentication_rate{clientId="producer-2",} 0.0
-kafka_producer_successful_authentication_rate{clientId="producer-3",} 0.0
-kafka_producer_successful_authentication_rate{clientId="connector-producer-CsvSpoolDir-0",} 0.0
-kafka_producer_successful_authentication_rate{clientId="connector-producer-CsvSpoolDir-1",} 0.0
+kafka_connect_request_size_avg{clientId="connect-1",} 119.44444444444444
 # HELP kafka_producer_version_info Kafka producer JMX metric info version and commit-id
 # TYPE kafka_producer_version_info gauge
-kafka_producer_version_info{version="2.4.1",clientId="connector-producer-CsvSpoolDir-1",} 1.0
 kafka_producer_version_info{version="2.4.1",clientId="connector-producer-CsvSpoolDir-0",} 1.0
 kafka_producer_version_info{version="2.4.1",clientId="producer-3",} 1.0
 kafka_producer_version_info{version="2.4.1",clientId="producer-1",} 1.0
 kafka_producer_version_info{version="2.4.1",clientId="producer-2",} 1.0
-# HELP kafka_connect_connector_task_offset_commit_failure_percentage Kafka Connect JMX metric type connector-task
-# TYPE kafka_connect_connector_task_offset_commit_failure_percentage gauge
-kafka_connect_connector_task_offset_commit_failure_percentage{connector="CsvSpoolDir",task="0",} 0.0
-kafka_connect_connector_task_offset_commit_failure_percentage{connector="CsvSpoolDir",task="1",} 0.0
 # HELP kafka_connect_coordinator_join_time_avg Kafka connect JMX metric type connect-coordinator
 # TYPE kafka_connect_coordinator_join_time_avg gauge
-kafka_connect_coordinator_join_time_avg{clientId="connect-1",} 3.6666666666666665
+kafka_connect_coordinator_join_time_avg{clientId="connect-1",} 8.0
 # HELP kafka_consumer_coordinator_join_time_avg Kafka consumer JMX metric type consumer-coordinator
 # TYPE kafka_consumer_coordinator_join_time_avg gauge
 kafka_consumer_coordinator_join_time_avg{clientId="consumer-connect-cluster-1",} NaN
@@ -1680,52 +1077,42 @@ kafka_consumer_coordinator_join_time_avg{clientId="consumer-connect-cluster-2",}
 kafka_consumer_coordinator_last_heartbeat_seconds_ago{clientId="consumer-connect-cluster-1",} -1.0
 kafka_consumer_coordinator_last_heartbeat_seconds_ago{clientId="consumer-connect-cluster-3",} -1.0
 kafka_consumer_coordinator_last_heartbeat_seconds_ago{clientId="consumer-connect-cluster-2",} -1.0
-# HELP kafka_producer_record_queue_time_max Kafka producer JMX metric type producer
-# TYPE kafka_producer_record_queue_time_max gauge
-kafka_producer_record_queue_time_max{clientId="producer-1",} 1.0
-kafka_producer_record_queue_time_max{clientId="producer-2",} 4.0
-kafka_producer_record_queue_time_max{clientId="producer-3",} 6.0
-kafka_producer_record_queue_time_max{clientId="connector-producer-CsvSpoolDir-0",} 59.0
-kafka_producer_record_queue_time_max{clientId="connector-producer-CsvSpoolDir-1",} NaN
 # HELP kafka_connect_worker_task_startup_success_total Kafka Connect JMX metric worker
 # TYPE kafka_connect_worker_task_startup_success_total gauge
-kafka_connect_worker_task_startup_success_total 2.0
+kafka_connect_worker_task_startup_success_total 1.0
 # HELP kafka_connect_source_task_poll_batch_avg_time_ms Kafka Connect JMX metric type source-task
 # TYPE kafka_connect_source_task_poll_batch_avg_time_ms gauge
-kafka_connect_source_task_poll_batch_avg_time_ms{connector="CsvSpoolDir",task="1",} NaN
-kafka_connect_source_task_poll_batch_avg_time_ms{connector="CsvSpoolDir",task="0",} 405.0
-# HELP kafka_connect_start_time Kafka connect JMX metric start time ms
-# TYPE kafka_connect_start_time gauge
-kafka_connect_start_time{clientId="connect-1",} 1.585183743692E12
+kafka_connect_source_task_poll_batch_avg_time_ms{connector="CsvSpoolDir",task="0",} NaN
 # HELP kafka_connect_worker_rebalance_rebalance_avg_time_ms Kafka Connect JMX metric rebalance information
 # TYPE kafka_connect_worker_rebalance_rebalance_avg_time_ms gauge
-kafka_connect_worker_rebalance_rebalance_avg_time_ms 654.3333333333334
+kafka_connect_worker_rebalance_rebalance_avg_time_ms 569.0
 # HELP kafka_connect_coordinator_failed_rebalance_total Kafka connect JMX metric type connect-coordinator
 # TYPE kafka_connect_coordinator_failed_rebalance_total gauge
 kafka_connect_coordinator_failed_rebalance_total{clientId="connect-1",} 1.0
 # HELP kafka_producer_topic_byte_total Kafka producer JMX metric type producer-topic
 # TYPE kafka_producer_topic_byte_total gauge
-kafka_producer_topic_byte_total{clientId="producer-3",topic="connect-configs",} 4003.0
-kafka_producer_topic_byte_total{clientId="producer-1",topic="connect-offsets",} 138.0
-kafka_producer_topic_byte_total{clientId="producer-2",topic="connect-status",} 516.0
-kafka_producer_topic_byte_total{clientId="connector-producer-CsvSpoolDir-0",topic="spooldir-testing-topic",} 1245248.0
+kafka_producer_topic_byte_total{clientId="producer-3",topic="connect-configs",} 195.0
+kafka_producer_topic_byte_total{clientId="producer-2",topic="connect-status",} 1705.0
 # HELP kafka_connect_connector_task_offset_commit_max_time_ms Kafka Connect JMX metric type connector-task
 # TYPE kafka_connect_connector_task_offset_commit_max_time_ms gauge
-kafka_connect_connector_task_offset_commit_max_time_ms{connector="CsvSpoolDir",task="0",} 20.0
-kafka_connect_connector_task_offset_commit_max_time_ms{connector="CsvSpoolDir",task="1",} 0.0
+kafka_connect_connector_task_offset_commit_max_time_ms{connector="CsvSpoolDir",task="0",} NaN
+# HELP kafka_consumer_start_time_seconds Kafka consumer JMX metric start time seconds
+# TYPE kafka_consumer_start_time_seconds gauge
+kafka_consumer_start_time_seconds{clientId="consumer-connect-cluster-1",} 1.585413323046E9
+kafka_consumer_start_time_seconds{clientId="consumer-connect-cluster-2",} 1.585413323367E9
+kafka_consumer_start_time_seconds{clientId="consumer-connect-cluster-3",} 1.585413323615E9
 # HELP kafka_connect_connector_task_pause_ratio Kafka Connect JMX metric type connector-task
 # TYPE kafka_connect_connector_task_pause_ratio gauge
 kafka_connect_connector_task_pause_ratio{connector="CsvSpoolDir",task="0",} 0.0
-kafka_connect_connector_task_pause_ratio{connector="CsvSpoolDir",task="1",} 0.0
 # HELP kafka_connect_node_request_latency_avg Kafka connect JMX metric type connect-node
 # TYPE kafka_connect_node_request_latency_avg untyped
 kafka_connect_node_request_latency_avg{clientId="connect-1",nodeId="node-2147483647",} NaN
 kafka_connect_node_request_latency_avg{clientId="connect-1",nodeId="node--1",} NaN
 # HELP kafka_consumer_response_total Kafka consumer JMX metric type consumer
 # TYPE kafka_consumer_response_total gauge
-kafka_consumer_response_total{clientId="consumer-connect-cluster-2",} 45.0
-kafka_consumer_response_total{clientId="consumer-connect-cluster-1",} 45.0
-kafka_consumer_response_total{clientId="consumer-connect-cluster-3",} 57.0
+kafka_consumer_response_total{clientId="consumer-connect-cluster-2",} 27.0
+kafka_consumer_response_total{clientId="consumer-connect-cluster-1",} 24.0
+kafka_consumer_response_total{clientId="consumer-connect-cluster-3",} 26.0
 # HELP kafka_connect_worker_task_startup_failure_total Kafka Connect JMX metric worker
 # TYPE kafka_connect_worker_task_startup_failure_total gauge
 kafka_connect_worker_task_startup_failure_total 0.0
@@ -1734,88 +1121,43 @@ kafka_connect_worker_task_startup_failure_total 0.0
 kafka_consumer_commit_id_info{commit_id="c57222ae8cd7866b",clientId="consumer-connect-cluster-1",} 1.0
 kafka_consumer_commit_id_info{commit_id="c57222ae8cd7866b",clientId="consumer-connect-cluster-2",} 1.0
 kafka_consumer_commit_id_info{commit_id="c57222ae8cd7866b",clientId="consumer-connect-cluster-3",} 1.0
-# HELP kafka_consumer_fetch_manager_fetch_latency_max Kafka consumer JMX metric type consumer-fetch-manager
-# TYPE kafka_consumer_fetch_manager_fetch_latency_max gauge
-kafka_consumer_fetch_manager_fetch_latency_max{clientId="consumer-connect-cluster-1",} 529.0
-kafka_consumer_fetch_manager_fetch_latency_max{clientId="consumer-connect-cluster-3",} 506.0
-kafka_consumer_fetch_manager_fetch_latency_max{clientId="consumer-connect-cluster-2",} 531.0
-# HELP kafka_producer_reauthentication_latency_max Kafka producer JMX metric type producer
-# TYPE kafka_producer_reauthentication_latency_max gauge
-kafka_producer_reauthentication_latency_max{clientId="producer-1",} NaN
-kafka_producer_reauthentication_latency_max{clientId="producer-2",} NaN
-kafka_producer_reauthentication_latency_max{clientId="producer-3",} NaN
-kafka_producer_reauthentication_latency_max{clientId="connector-producer-CsvSpoolDir-0",} NaN
-kafka_producer_reauthentication_latency_max{clientId="connector-producer-CsvSpoolDir-1",} NaN
-# HELP kafka_consumer_node_request_latency_max Kafka consumer JMX metric type consumer-node
-# TYPE kafka_consumer_node_request_latency_max untyped
-kafka_consumer_node_request_latency_max{clientId="consumer-connect-cluster-1",nodeId="node--1",} NaN
-kafka_consumer_node_request_latency_max{clientId="consumer-connect-cluster-2",nodeId="node--1",} NaN
-kafka_consumer_node_request_latency_max{clientId="consumer-connect-cluster-2",nodeId="node-0",} NaN
-kafka_consumer_node_request_latency_max{clientId="consumer-connect-cluster-3",nodeId="node-0",} NaN
-kafka_consumer_node_request_latency_max{clientId="consumer-connect-cluster-3",nodeId="node--1",} NaN
-kafka_consumer_node_request_latency_max{clientId="consumer-connect-cluster-1",nodeId="node-0",} NaN
-# HELP kafka_connect_node_request_rate Kafka connect JMX metric type connect-node
-# TYPE kafka_connect_node_request_rate untyped
-kafka_connect_node_request_rate{clientId="connect-1",nodeId="node-2147483647",} 0.2517993159451917
-kafka_connect_node_request_rate{clientId="connect-1",nodeId="node--1",} 0.06245706077072013
+# HELP kafka_producer_start_time_seconds Kafka producer JMX metric start time seconds
+# TYPE kafka_producer_start_time_seconds gauge
+kafka_producer_start_time_seconds{clientId="connector-producer-CsvSpoolDir-0",} 1.5854133242220001E9
+kafka_producer_start_time_seconds{clientId="producer-3",} 1.585413323601E9
+kafka_producer_start_time_seconds{clientId="producer-1",} 1.58541332288E9
+kafka_producer_start_time_seconds{clientId="producer-2",} 1.585413323358E9
 # HELP kafka_connect_coordinator_rebalance_latency_avg Kafka connect JMX metric type connect-coordinator
 # TYPE kafka_connect_coordinator_rebalance_latency_avg gauge
-kafka_connect_coordinator_rebalance_latency_avg{clientId="connect-1",} 23.666666666666668
-# HELP kafka_producer_connection_creation_rate Kafka producer JMX metric type producer
-# TYPE kafka_producer_connection_creation_rate gauge
-kafka_producer_connection_creation_rate{clientId="producer-1",} 0.04148000663680106
-kafka_producer_connection_creation_rate{clientId="producer-2",} 0.04171794497403058
-kafka_producer_connection_creation_rate{clientId="producer-3",} 0.0418296279254596
-kafka_producer_connection_creation_rate{clientId="connector-producer-CsvSpoolDir-0",} 0.04820090135685537
-kafka_producer_connection_creation_rate{clientId="connector-producer-CsvSpoolDir-1",} 0.023997504259557007
+kafka_connect_coordinator_rebalance_latency_avg{clientId="connect-1",} 63.0
 # HELP kafka_connect_worker_connector_startup_failure_percentage Kafka Connect JMX metric worker
 # TYPE kafka_connect_worker_connector_startup_failure_percentage gauge
 kafka_connect_worker_connector_startup_failure_percentage 0.0
-# HELP kafka_producer_request_size_max Kafka producer JMX metric type producer
-# TYPE kafka_producer_request_size_max gauge
-kafka_producer_request_size_max{clientId="producer-1",} 203.0
-kafka_producer_request_size_max{clientId="producer-2",} 238.0
-kafka_producer_request_size_max{clientId="producer-3",} 1621.0
-kafka_producer_request_size_max{clientId="connector-producer-CsvSpoolDir-0",} 16284.0
-kafka_producer_request_size_max{clientId="connector-producer-CsvSpoolDir-1",} 72.0
 # HELP kafka_consumer_coordinator_rebalance_latency_total Kafka consumer JMX metric type consumer-coordinator
 # TYPE kafka_consumer_coordinator_rebalance_latency_total gauge
 kafka_consumer_coordinator_rebalance_latency_total{clientId="consumer-connect-cluster-1",} 0.0
 kafka_consumer_coordinator_rebalance_latency_total{clientId="consumer-connect-cluster-3",} 0.0
 kafka_consumer_coordinator_rebalance_latency_total{clientId="consumer-connect-cluster-2",} 0.0
-# HELP kafka_producer_select_rate Kafka producer JMX metric type producer
-# TYPE kafka_producer_select_rate gauge
-kafka_producer_select_rate{clientId="producer-1",} 0.2903480028205234
-kafka_producer_select_rate{clientId="producer-2",} 0.43802014892685065
-kafka_producer_select_rate{clientId="producer-3",} 0.5856025431881876
-kafka_producer_select_rate{clientId="connector-producer-CsvSpoolDir-0",} 8.868110947779357
-kafka_producer_select_rate{clientId="connector-producer-CsvSpoolDir-1",} 0.11998464196582838
 # HELP kafka_consumer_io_wait_time_ns_avg Kafka consumer JMX metric type consumer
 # TYPE kafka_consumer_io_wait_time_ns_avg gauge
-kafka_consumer_io_wait_time_ns_avg{clientId="consumer-connect-cluster-2",} 1.869083823617021E8
-kafka_consumer_io_wait_time_ns_avg{clientId="consumer-connect-cluster-1",} 1.8832199852083334E8
-kafka_consumer_io_wait_time_ns_avg{clientId="consumer-connect-cluster-3",} 1.362362161076923E8
+kafka_consumer_io_wait_time_ns_avg{clientId="consumer-connect-cluster-2",} 1.3005261563333334E8
+kafka_consumer_io_wait_time_ns_avg{clientId="consumer-connect-cluster-1",} 1.566844104117647E8
+kafka_consumer_io_wait_time_ns_avg{clientId="consumer-connect-cluster-3",} 1.3191260103448276E8
 # HELP kafka_consumer_outgoing_byte_total Kafka consumer JMX metric type consumer
 # TYPE kafka_consumer_outgoing_byte_total gauge
-kafka_consumer_outgoing_byte_total{clientId="consumer-connect-cluster-2",} 3919.0
-kafka_consumer_outgoing_byte_total{clientId="consumer-connect-cluster-1",} 5351.0
-kafka_consumer_outgoing_byte_total{clientId="consumer-connect-cluster-3",} 4760.0
+kafka_consumer_outgoing_byte_total{clientId="consumer-connect-cluster-2",} 2671.0
+kafka_consumer_outgoing_byte_total{clientId="consumer-connect-cluster-1",} 3381.0
+kafka_consumer_outgoing_byte_total{clientId="consumer-connect-cluster-3",} 2162.0
 # HELP kafka_connect_node_request_total Kafka connect JMX metric type connect-node
 # TYPE kafka_connect_node_request_total untyped
-kafka_connect_node_request_total{clientId="connect-1",nodeId="node-2147483647",} 12.0
+kafka_connect_node_request_total{clientId="connect-1",nodeId="node-2147483647",} 6.0
 kafka_connect_node_request_total{clientId="connect-1",nodeId="node--1",} 3.0
 # HELP kafka_connect_io_time_ns_avg Kafka connect JMX metric type connect
 # TYPE kafka_connect_io_time_ns_avg gauge
-kafka_connect_io_time_ns_avg{clientId="connect-1",} 41203.24345549738
-# HELP kafka_consumer_select_rate Kafka consumer JMX metric type consumer
-# TYPE kafka_consumer_select_rate gauge
-kafka_consumer_select_rate{clientId="consumer-connect-cluster-2",} 1.9523947991525776
-kafka_consumer_select_rate{clientId="consumer-connect-cluster-1",} 1.9804431241490286
-kafka_consumer_select_rate{clientId="consumer-connect-cluster-3",} 2.698047029035137
+kafka_connect_io_time_ns_avg{clientId="connect-1",} 62597.72023809524
 # HELP kafka_connect_source_task_poll_batch_max_time_ms Kafka Connect JMX metric type source-task
 # TYPE kafka_connect_source_task_poll_batch_max_time_ms gauge
-kafka_connect_source_task_poll_batch_max_time_ms{connector="CsvSpoolDir",task="1",} NaN
-kafka_connect_source_task_poll_batch_max_time_ms{connector="CsvSpoolDir",task="0",} 405.0
+kafka_connect_source_task_poll_batch_max_time_ms{connector="CsvSpoolDir",task="0",} NaN
 # HELP kafka_consumer_fetch_manager_preferred_read_replica Kafka consumer JMX metric type consumer-fetch-manager
 # TYPE kafka_consumer_fetch_manager_preferred_read_replica gauge
 kafka_consumer_fetch_manager_preferred_read_replica{clientId="consumer-connect-cluster-2",partition="4",topic="connect-status",} -1.0
@@ -1849,115 +1191,58 @@ kafka_consumer_fetch_manager_preferred_read_replica{clientId="consumer-connect-c
 kafka_consumer_fetch_manager_preferred_read_replica{clientId="consumer-connect-cluster-1",partition="13",topic="connect-offsets",} -1.0
 kafka_consumer_fetch_manager_preferred_read_replica{clientId="consumer-connect-cluster-1",partition="5",topic="connect-offsets",} -1.0
 kafka_consumer_fetch_manager_preferred_read_replica{clientId="consumer-connect-cluster-1",partition="20",topic="connect-offsets",} -1.0
-# HELP kafka_connect_source_task_source_record_active_count_max Kafka Connect JMX metric type source-task
-# TYPE kafka_connect_source_task_source_record_active_count_max gauge
-kafka_connect_source_task_source_record_active_count_max{connector="CsvSpoolDir",task="1",} NaN
-kafka_connect_source_task_source_record_active_count_max{connector="CsvSpoolDir",task="0",} 1000.0
-# HELP kafka_consumer_fetch_manager_bytes_consumed_rate Kafka consumer JMX metric type consumer-fetch-manager
-# TYPE kafka_consumer_fetch_manager_bytes_consumed_rate gauge
-kafka_consumer_fetch_manager_bytes_consumed_rate{clientId="consumer-connect-cluster-2",topic="connect-status",} 7.040466827349993
-kafka_consumer_fetch_manager_bytes_consumed_rate{clientId="consumer-connect-cluster-1",} 1.6232739538315588
-kafka_consumer_fetch_manager_bytes_consumed_rate{clientId="consumer-connect-cluster-3",topic="connect-configs",} 80.43998488601537
-kafka_consumer_fetch_manager_bytes_consumed_rate{clientId="consumer-connect-cluster-1",topic="connect-offsets",} 1.618735284224689
-kafka_consumer_fetch_manager_bytes_consumed_rate{clientId="consumer-connect-cluster-3",} 79.65576735194462
-kafka_consumer_fetch_manager_bytes_consumed_rate{clientId="consumer-connect-cluster-2",} 6.955177743431221
 # HELP kafka_connect_successful_authentication_total Kafka connect JMX metric type connect
 # TYPE kafka_connect_successful_authentication_total gauge
 kafka_connect_successful_authentication_total{clientId="connect-1",} 0.0
-# HELP kafka_consumer_coordinator_failed_rebalance_rate_per_hour Kafka consumer JMX metric type consumer-coordinator
-# TYPE kafka_consumer_coordinator_failed_rebalance_rate_per_hour gauge
-kafka_consumer_coordinator_failed_rebalance_rate_per_hour{clientId="consumer-connect-cluster-1",} 0.0
-kafka_consumer_coordinator_failed_rebalance_rate_per_hour{clientId="consumer-connect-cluster-3",} 0.0
-kafka_consumer_coordinator_failed_rebalance_rate_per_hour{clientId="consumer-connect-cluster-2",} 0.0
 # HELP kafka_producer_node_incoming_byte_total Kafka producer JMX metric type producer-node
 # TYPE kafka_producer_node_incoming_byte_total untyped
-kafka_producer_node_incoming_byte_total{clientId="producer-3",nodeId="node-0",} 841.0
-kafka_producer_node_incoming_byte_total{clientId="producer-1",nodeId="node-0",} 1173.0
-kafka_producer_node_incoming_byte_total{clientId="connector-producer-CsvSpoolDir-0",nodeId="node-0",} 10829.0
+kafka_producer_node_incoming_byte_total{clientId="producer-3",nodeId="node-0",} 549.0
 kafka_producer_node_incoming_byte_total{clientId="producer-2",nodeId="node--1",} 425.0
 kafka_producer_node_incoming_byte_total{clientId="producer-1",nodeId="node--1",} 425.0
-kafka_producer_node_incoming_byte_total{clientId="producer-2",nodeId="node-0",} 795.0
+kafka_producer_node_incoming_byte_total{clientId="producer-2",nodeId="node-0",} 723.0
 kafka_producer_node_incoming_byte_total{clientId="connector-producer-CsvSpoolDir-0",nodeId="node--1",} 425.0
 kafka_producer_node_incoming_byte_total{clientId="producer-3",nodeId="node--1",} 425.0
-kafka_producer_node_incoming_byte_total{clientId="connector-producer-CsvSpoolDir-1",nodeId="node--1",} 425.0
 # HELP kafka_connect_worker_rebalance_rebalance_max_time_ms Kafka Connect JMX metric rebalance information
 # TYPE kafka_connect_worker_rebalance_rebalance_max_time_ms gauge
-kafka_connect_worker_rebalance_rebalance_max_time_ms 1518.0
+kafka_connect_worker_rebalance_rebalance_max_time_ms 569.0
 # HELP kafka_connect_source_task_source_record_poll_total Kafka Connect JMX metric type source-task
 # TYPE kafka_connect_source_task_source_record_poll_total gauge
-kafka_connect_source_task_source_record_poll_total{connector="CsvSpoolDir",task="1",} 0.0
-kafka_connect_source_task_source_record_poll_total{connector="CsvSpoolDir",task="0",} 1000.0
-# HELP kafka_connect_coordinator_sync_rate Kafka connect JMX metric type connect-coordinator
-# TYPE kafka_connect_coordinator_sync_rate gauge
-kafka_connect_coordinator_sync_rate{clientId="connect-1",} 0.062423271395576276
-# HELP kafka_producer_batch_size_max Kafka producer JMX metric type producer
-# TYPE kafka_producer_batch_size_max gauge
-kafka_producer_batch_size_max{clientId="producer-1",} 138.0
-kafka_producer_batch_size_max{clientId="producer-2",} 174.0
-kafka_producer_batch_size_max{clientId="producer-3",} 1556.0
-kafka_producer_batch_size_max{clientId="connector-producer-CsvSpoolDir-0",} 16190.0
-kafka_producer_batch_size_max{clientId="connector-producer-CsvSpoolDir-1",} NaN
-# HELP kafka_consumer_network_io_rate Kafka consumer JMX metric type consumer
-# TYPE kafka_consumer_network_io_rate gauge
-kafka_consumer_network_io_rate{clientId="consumer-connect-cluster-2",} 1.8901628447989365
-kafka_consumer_network_io_rate{clientId="consumer-connect-cluster-1",} 1.8774499690530226
-kafka_consumer_network_io_rate{clientId="consumer-connect-cluster-3",} 2.3867834461002033
+kafka_connect_source_task_source_record_poll_total{connector="CsvSpoolDir",task="0",} 0.0
 # HELP kafka_producer_incoming_byte_total Kafka producer JMX metric type producer
 # TYPE kafka_producer_incoming_byte_total gauge
-kafka_producer_incoming_byte_total{clientId="producer-1",} 1598.0
-kafka_producer_incoming_byte_total{clientId="producer-2",} 1220.0
-kafka_producer_incoming_byte_total{clientId="producer-3",} 1266.0
-kafka_producer_incoming_byte_total{clientId="connector-producer-CsvSpoolDir-0",} 11254.0
-kafka_producer_incoming_byte_total{clientId="connector-producer-CsvSpoolDir-1",} 425.0
+kafka_producer_incoming_byte_total{clientId="producer-1",} 425.0
+kafka_producer_incoming_byte_total{clientId="producer-2",} 1148.0
+kafka_producer_incoming_byte_total{clientId="producer-3",} 974.0
+kafka_producer_incoming_byte_total{clientId="connector-producer-CsvSpoolDir-0",} 425.0
 # HELP kafka_connect_incoming_byte_total Kafka connect JMX metric type connect
 # TYPE kafka_connect_incoming_byte_total gauge
-kafka_connect_incoming_byte_total{clientId="connect-1",} 4487.0
+kafka_connect_incoming_byte_total{clientId="connect-1",} 3567.0
 # HELP kafka_connect_successful_authentication_no_reauth_total Kafka connect JMX metric type connect
 # TYPE kafka_connect_successful_authentication_no_reauth_total gauge
 kafka_connect_successful_authentication_no_reauth_total{clientId="connect-1",} 0.0
-# HELP kafka_producer_incoming_byte_rate Kafka producer JMX metric type producer
-# TYPE kafka_producer_incoming_byte_rate gauge
-kafka_producer_incoming_byte_rate{clientId="producer-1",} 33.144587559371956
-kafka_producer_incoming_byte_rate{clientId="producer-2",} 25.450069883388615
-kafka_producer_incoming_byte_rate{clientId="producer-3",} 26.478708274073455
-kafka_producer_incoming_byte_rate{clientId="connector-producer-CsvSpoolDir-0",} 271.23954592562245
-kafka_producer_incoming_byte_rate{clientId="connector-producer-CsvSpoolDir-1",} 10.199918400652795
 # HELP kafka_connect_connector_task_batch_size_avg Kafka Connect JMX metric type connector-task
 # TYPE kafka_connect_connector_task_batch_size_avg gauge
-kafka_connect_connector_task_batch_size_avg{connector="CsvSpoolDir",task="0",} 1000.0
-kafka_connect_connector_task_batch_size_avg{connector="CsvSpoolDir",task="1",} NaN
+kafka_connect_connector_task_batch_size_avg{connector="CsvSpoolDir",task="0",} NaN
 # HELP kafka_connect_worker_rebalance_rebalancing Kafka Connect JMX metric rebalance information
 # TYPE kafka_connect_worker_rebalance_rebalancing gauge
 kafka_connect_worker_rebalance_rebalancing 0.0
-# HELP kafka_connect_source_task_source_record_write_rate Kafka Connect JMX metric type source-task
-# TYPE kafka_connect_source_task_source_record_write_rate gauge
-kafka_connect_source_task_source_record_write_rate{connector="CsvSpoolDir",task="1",} 0.0
-kafka_connect_source_task_source_record_write_rate{connector="CsvSpoolDir",task="0",} 24.58754395023481
 # HELP kafka_consumer_fetch_manager_fetch_total Kafka consumer JMX metric type consumer-fetch-manager
 # TYPE kafka_consumer_fetch_manager_fetch_total gauge
-kafka_consumer_fetch_manager_fetch_total{clientId="consumer-connect-cluster-1",} 36.0
-kafka_consumer_fetch_manager_fetch_total{clientId="consumer-connect-cluster-3",} 41.0
-kafka_consumer_fetch_manager_fetch_total{clientId="consumer-connect-cluster-2",} 38.0
-# HELP kafka_consumer_node_request_rate Kafka consumer JMX metric type consumer-node
-# TYPE kafka_consumer_node_request_rate untyped
-kafka_consumer_node_request_rate{clientId="consumer-connect-cluster-1",nodeId="node--1",} 0.06211308722747883
-kafka_consumer_node_request_rate{clientId="consumer-connect-cluster-2",nodeId="node--1",} 0.06240249609984399
-kafka_consumer_node_request_rate{clientId="consumer-connect-cluster-2",nodeId="node-0",} 0.9101816226056018
-kafka_consumer_node_request_rate{clientId="consumer-connect-cluster-3",nodeId="node-0",} 1.1415288184138976
-kafka_consumer_node_request_rate{clientId="consumer-connect-cluster-3",nodeId="node--1",} 0.062185187488340274
-kafka_consumer_node_request_rate{clientId="consumer-connect-cluster-1",nodeId="node-0",} 0.884318766066838
+kafka_consumer_fetch_manager_fetch_total{clientId="consumer-connect-cluster-1",} 16.0
+kafka_consumer_fetch_manager_fetch_total{clientId="consumer-connect-cluster-3",} 17.0
+kafka_consumer_fetch_manager_fetch_total{clientId="consumer-connect-cluster-2",} 18.0
 # HELP jmx_scrape_duration_seconds Time this JMX scrape took, in seconds.
 # TYPE jmx_scrape_duration_seconds gauge
-jmx_scrape_duration_seconds 0.626337909
+jmx_scrape_duration_seconds 0.393607038
 # HELP jmx_scrape_error Non-zero if this scrape failed.
 # TYPE jmx_scrape_error gauge
 jmx_scrape_error 0.0
 # HELP jvm_classes_loaded The number of classes that are currently loaded in the JVM
 # TYPE jvm_classes_loaded gauge
-jvm_classes_loaded 8427.0
+jvm_classes_loaded 8057.0
 # HELP jvm_classes_loaded_total The total number of classes that have been loaded since the JVM has started execution
 # TYPE jvm_classes_loaded_total counter
-jvm_classes_loaded_total 8428.0
+jvm_classes_loaded_total 8058.0
 # HELP jvm_classes_unloaded_total The total number of classes that have been unloaded since the JVM has started execution
 # TYPE jvm_classes_unloaded_total counter
 jvm_classes_unloaded_total 1.0
@@ -1969,16 +1254,16 @@ jvm_info{version="1.8.0_242-8u242-b08-0ubuntu3~18.04-b08",vendor="Private Build"
 jmx_config_reload_failure_total 0.0
 # HELP jvm_threads_current Current thread count of a JVM
 # TYPE jvm_threads_current gauge
-jvm_threads_current 36.0
+jvm_threads_current 32.0
 # HELP jvm_threads_daemon Daemon thread count of a JVM
 # TYPE jvm_threads_daemon gauge
-jvm_threads_daemon 15.0
+jvm_threads_daemon 14.0
 # HELP jvm_threads_peak Peak thread count of a JVM
 # TYPE jvm_threads_peak gauge
-jvm_threads_peak 36.0
+jvm_threads_peak 32.0
 # HELP jvm_threads_started_total Started thread count of a JVM
 # TYPE jvm_threads_started_total counter
-jvm_threads_started_total 71.0
+jvm_threads_started_total 67.0
 # HELP jvm_threads_deadlocked Cycles of JVM-threads that are in deadlock waiting to acquire object monitors or ownable synchronizers
 # TYPE jvm_threads_deadlocked gauge
 jvm_threads_deadlocked 0.0
